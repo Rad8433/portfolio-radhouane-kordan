@@ -1,115 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./styles/main.css" />
-    <title>Radhouane Kordan</title>
-  </head>
 
-  <body>
-    <div
-      class="nav d-flex justify-content-center sticky-top mx-auto p-2 px-4 mt-4"
-    >
-      <a href="#accueil" class="btn-nav">Accueil</a>
-      <a href="#apropos" class="btn-nav">À propos</a>
-      <a href="#projets" class="btn-nav">Projets</a>
-      <button class="btn-toggle ms-3">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          width="28"
-          height="28"
-          fill="none"
-          stroke="yellowgreen"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <circle cx="12" cy="12" r="5"></circle>
-          <line x1="12" y1="1" x2="12" y2="3"></line>
-          <line x1="12" y1="21" x2="12" y2="23"></line>
-          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-          <line x1="1" y1="12" x2="3" y2="12"></line>
-          <line x1="21" y1="12" x2="23" y2="12"></line>
-          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-        </svg>
-      </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./styles/main.css" />
+  <title>Radhouane Kordan</title>
+</head>
+
+<body>
+  <div class="nav d-flex justify-content-center sticky-top mx-auto p-2 px-4 mt-4">
+    <a href="#accueil" class="btn-nav">Accueil</a>
+    <a href="#apropos" class="btn-nav">À propos</a>
+    <a href="#projets" class="btn-nav">Projets</a>
+    <button class="btn-toggle ms-3">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none"
+        stroke="yellowgreen" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="5"></circle>
+        <line x1="12" y1="1" x2="12" y2="3"></line>
+        <line x1="12" y1="21" x2="12" y2="23"></line>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+        <line x1="1" y1="12" x2="3" y2="12"></line>
+        <line x1="21" y1="12" x2="23" y2="12"></line>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+      </svg>
+    </button>
+  </div>
+
+  <div id="accueil" class="container text-center">
+    <div class="titres">
+      <h1 class="titrePage">Portfolio</h1>
+      <h1 class="nomTitre">Radhouane Kordan</h1>
+    </div>
+  </div>
+
+  <div id="apropos" class="container my-5">
+    <div class="text-center mb-4">
+      <img src="./medias/images/vecteezy_ufo-png-with-ai-generated_26773803 1.png" alt="ufo" style="width: 43%"
+        class="img-fluid" />
     </div>
 
-    <div id="accueil" class="container text-center">
-      <div class="titres">
-        <h1 class="titrePage">Portfolio</h1>
-        <h1 class="nomTitre">Radhouane Kordan</h1>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2 class="hey mb-4">Hey</h2>
+        <p class="apropos mb-3">
+          Je suis étudiant en techniques d'intégration multimédia, avec un
+          fort intérêt pour le développement web Frontend et le design. Mon
+          but est de travailler dans le domaine du web, où je pourrai mettre
+          en pratique ce que j’apprends et continuer à progresser.
+        </p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="./medias/images/Intersect.png" alt="picture of me" class="img-fluid rounded" style="max-width: 50%" />
       </div>
     </div>
-
-    <div id="apropos" class="container my-5">
-      <div class="text-center mb-4">
-        <img
-          src="./medias/images/vecteezy_ufo-png-with-ai-generated_26773803 1.png"
-          alt="ufo"
-          style="width: 43%"
-          class="img-fluid"
-        />
-      </div>
-
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <h2 class="hey mb-4">Hey</h2>
-          <p class="apropos mb-3">
-            Je suis étudiant en techniques d'intégration multimédia, avec un
-            fort intérêt pour le développement web Frontend et le design. Mon
-            but est de travailler dans le domaine du web, où je pourrai mettre
-            en pratique ce que j’apprends et continuer à progresser.
-          </p>
-        </div>
-        <div class="col-md-6 text-center">
-          <img
-            src="./medias/images/Intersect.png"
-            alt="picture of me"
-            class="img-fluid rounded"
-            style="max-width: 50%"
-          />
-        </div>
-      </div>
-      <div class="row mt-4">
-        <div class="col text-center">
-          <p>Basé à Laval, Qc</p>
-          <p>(XXX) XXX-XXXX</p>
-          <p>xxxxxxxx@gmail.com</p>
-        </div>
-      </div>
-      <div class="row mt-4">
-        <div class="col text-center">
-          <h2>Compétences</h2>
-        </div>
+    <div class="row mt-4">
+      <div class="col info">
+        <p>Basé à Laval, Qc</p>
+        <p>(XXX) XXX-XXXX</p>
+        <p>xxxxxxxx@gmail.com</p>
       </div>
     </div>
-
-    <div id="projets" class="container text-center">
-      <h2>Projets</h2>
+    <div class="row mt-4">
+      <div class="col text-center">
+        <h2>Compétences</h2>
+      </div>
     </div>
-    <!-- scripts -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-    <script src="./scripts/main.js"></script>
-  </body>
+  </div>
+
+  <div id="projets" class="container text-center">
+    <h2>Projets</h2>
+  </div>
+  <!-- scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="./scripts/main.js"></script>
+</body>
+
 </html>
