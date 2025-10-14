@@ -19,7 +19,6 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -67,32 +66,22 @@ body {
   background: #000;
 }
 
+#apropos {
+  position: relative;
+}
+
 .titres {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 4rem 6rem;
-  /*background créé avec figma, pas sure de le garder*/
-  /*background-image: url("../medias/images/glow.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;*/
 }
 
-/* Selection les enfants de la classe titres  */
+/* Sélection les enfants de la classe titres  */
 .titres > * {
-  transition: text-shadow 0.5s ease, color 0.5s ease;
   color: white;
-  text-shadow: none;
-}
-
-/*en appliquant la couleur plusieurs fois sur text-shadow, l'effet est plus intense*/
-.titres:hover > * {
-  color: white;
-  text-shadow: 0 0 5px rgb(154, 205, 50), 0 0 10px rgb(154, 205, 50),
-    0 0 20px rgb(154, 205, 50), 0 0 40px rgb(154, 205, 50),
-    0 0 60px rgb(154, 205, 50);
+  animation: titres 1.6s ease-in-out infinite;
 }
 
 .titrePage {
@@ -113,6 +102,7 @@ body {
   font-size: 3rem;
   color: white;
 }
+
 .apropos {
   color: white;
   font-size: 1.5rem;
@@ -120,4 +110,65 @@ body {
 
 .info > * {
   color: white;
+}
+
+.ufo,
+.ufo__img {
+  position: relative;
+}
+.ufo {
+  display: inline-block;
+}
+
+.ufo__img {
+  z-index: 2;
+  width: 100%;
+  height: auto;
+}
+
+/* Pour avoir l'effet beam qui sort du Ufo */
+.ufo::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 300%;
+  opacity: 0;
+  z-index: 1; /* en dessous de l'image ufo */
+  transition: opacity 0.3s;
+  background: linear-gradient(to bottom, rgba(154, 205, 50, 0.4), transparent);
+  clip-path: polygon(
+    50% 0%,
+    0% 100%,
+    100% 100%
+  ); /* pour avoir la forme d'un cone */
+}
+
+.ufo:hover::after {
+  opacity: 1;
+  animation: ufobeam 1.2s ease-in-out infinite;
+}
+/* Anim ufobeam */
+@keyframes ufobeam {
+  0%,
+  100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.3);
+  }
+}
+
+/* Anim titres */
+@keyframes titres {
+  0%,
+  100% {
+    text-shadow: 0 0 5px rgb(154, 205, 50), 0 0 10px rgb(154, 205, 50);
+  }
+  50% {
+    text-shadow: 0 0 12px rgb(154, 205, 50), 0 0 24px rgb(154, 205, 50),
+      0 0 36px rgb(154, 205, 50);
+  }
 }
