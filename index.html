@@ -70,21 +70,59 @@
     </div>
     <div class="row mt-4">
       <div class="col text-center">
-        <h2>Compétences</h2>
+        <h2 class="titreComp">Compétences</h2>
+        <div class="competences">
+          <div class="comp-ico">
+            <img class="icon" src="./medias/images/icones/ico_vs.png" alt="VS Code">
+            <p class="nom-icon">VS Code</p>
+          </div>
+          <div class="comp-ico">
+            <img class="icon" src="./medias/images/icones/ico_html.png" alt="HTML">
+            <p class="nom-icon">HTML</p>
+          </div>
+          <div class="comp-ico">
+            <img class="icon" src="./medias/images/icones/ico_css.png" alt="CSS">
+            <p class="nom-icon">CSS</p>
+          </div>
+          <div class="comp-ico">
+            <img class="icon" src="./medias/images/icones/ico_js.png" alt="JavaScript">
+            <p class="nom-icon">JavaScript</p>
+          </div>
+          <div class="comp-ico">
+            <img class="icon" src="./medias/images/icones/ico_wp.png" alt="WordPress">
+            <p class="nom-icon">WordPress</p>
+          </div>
+          <div class="comp-ico">
+            <img class="icon" src="./medias/images/icones/ico_figma.png" alt="Figma">
+            <p class="nom-icon">Figma</p>
+          </div>
+          <div class="comp-ico">
+            <img class="icon" src="./medias/images/icones/ico_ai.png" alt="Illustrator">
+            <p class="nom-icon">Illustrator</p>
+          </div>
+          <div class="comp-ico">
+            <img class="icon" src="./medias/images/icones/ico_ps.png" alt="Photoshop">
+            <p class="nom-icon">Photoshop</p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div id="projets" class="container text-center">
-    <h2>Projets</h2>
-  </div>
-  <!-- scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
-    </script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-  <script src="./scripts/main.js"></script>
+    <div id="projets" class="projects-section">
+      <h2 class="projects-title">Projets</h2>
+
+      <div class="projects-grid">
+        <div class="project-card" v-for="p in projects">
+        </div>
+      </div>
+    </div>
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="./scripts/main.js"></script>
 </body>
 
 </html>
