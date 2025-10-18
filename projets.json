@@ -1,0 +1,46 @@
+[
+  {
+    "nom": "Portraits",
+    "categorie": "Art numérique",
+    "description": "Série d’autoportraits explorant la couleur et la forme pour exprimer ma personnalité à travers un style artistique unique.",
+    "logiciels": ["Photoshop"],
+    "image": "./medias/images/projets/projet_autoportrait_01.jpg",
+    "typeProjet": "Individuel",
+    "role": "Designer graphique"
+  },
+  {
+    "nom": "Le devoir du chevalier",
+    "categorie": "Jeux vidéo",
+    "description": "Jeu 2D interactif où le joueur incarne un chevalier en quête d’honneur. Un projet combinant code et design ludique.",
+    "logiciels": ["HTML", "CSS", "JavaScript (Phaser)"],
+    "image": "./medias/images/projets/devoir_du_chevalier_menu.png",
+    "lien": {
+      "label": "Voir le jeu",
+      "url": "https://merlinfoxwiz.itch.io/le-devoir-du-chevalier?classId=bad76dca-86a6-451b-bbc0-70aa50a3142e&assignmentId=1c974c83-31dd-493c-9854-7b0793ee92bb&submissionId=a6ddd05f-925b-40d9-e410-30ca85a485ed"
+    },
+    "typeProjet": "Individuel",
+    "role": "Développeur et designer de jeu"
+  },
+  {
+    "nom": "Chat-alien",
+    "categorie": "3D",
+    "description": "Création d’un personnage extraterrestre modélisé et riggé dans Maya, prêt à être animé.",
+    "logiciels": ["Maya"],
+    "image": "./medias/images/projets/pr_model_rendu_pose_salut.jpg",
+    "typeProjet": "Individuel",
+    "role": "Modeleur 3D et rigger"
+  },
+  {
+    "nom": "La Machine (stop-motion)",
+    "categorie": "Vidéo",
+    "description": "Court métrage en stop-motion racontant l’histoire d’un inventeur dépassé par sa création.",
+    "logiciels": ["Dragonframe", "Adobe Illustrator", "After Effects", "DaVinci Resolve"],
+    "image": "./medias/images/projets/projet_film_La_Machine_01.jpg",
+    "lien": {
+      "label": "Voir le court métrage",
+      "url": "https://www.youtube.com/watch?v=mhL4YEecby4"
+    },
+    "typeProjet": "En équipe",
+    "role": "Réalisateur et monteur"
+  }
+]

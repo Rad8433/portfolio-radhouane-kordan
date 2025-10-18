@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <div class="nav d-flex justify-content-center sticky-top mx-auto p-2 px-4 mt-4">
+  <div class="nav d-flex justify-content-center mx-auto p-2 px-4 mt-4">
     <a href="#accueil" class="btn-nav">Accueil</a>
     <a href="#apropos" class="btn-nav">À propos</a>
     <a href="#projets" class="btn-nav">Projets</a>
@@ -107,22 +107,52 @@
         </div>
       </div>
     </div>
-
-    <div id="projets" class="projects-section">
-      <h2 class="projects-title">Projets</h2>
-
-      <div class="projects-grid">
-        <div class="project-card" v-for="p in projects">
-        </div>
+  </div>
+  <div id="projets" class="mt-4">
+    <h2 class="projets-title text-center mb-4">Projets</h2>
+    <div id="app" class="projets-grid">
+      <div class="projet-card" v-for="projet in projetsArr">
+        <h3 class="projet-titre">{{ projet.nom }}</h3>
+        <img class="projet-img" :src="projet.image" :alt="projet.nom" />
+        <a v-if="projet.lien" class="projet-lien" :href="projet.lien.url" target="_blank" rel="noopener noreferrer">
+          {{ projet.lien.label }}
+        </a>
+        <p class="projet-desc">{{ projet.description }}</p>
+        <p>
+          <strong>rôle:</strong> {{ projet.role }}
+        </p>
+        <p>
+          <strong>technologie:</strong> {{ projet.logiciels.join(", ").toLowerCase() }}
+        </p>
+        <p class="projet-type">
+          <strong>Type de projet:</strong> {{ projet.typeProjet.toLowerCase() }}
+        </p>
       </div>
     </div>
-    <!-- scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
-      </script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-    <script src="./scripts/main.js"></script>
+  </div>
+  <!-- scripts -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="./scripts/main.js"></script>
+  <footer class="footer">
+    <div class="ico-sociaux">
+      <a href="https://github.com/" target="_blank" aria-label="GitHub">
+        <img src="./medias/images/icones/ico-github.png" alt="icone GitHub" class="ico-sociale">
+      </a>
+      <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn">
+        <img src="./medias/images/icones/ico-linkedin.png" alt="icone LinkedIn" class="ico-sociale">
+      </a>
+      <a href="mailto:tonemail@example.com" aria-label="Email">
+        <img src="./medias/images/icones/ico-email.png" alt="icone Email" class="ico-sociale">
+      </a>
+    </div>
+    <p class="texte-footer">Radhouane Kordan - 2025</p>
+  </footer>
 </body>
 
 </html>

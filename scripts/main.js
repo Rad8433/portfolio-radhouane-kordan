@@ -11,3 +11,14 @@ gsap.from(".ufo", {
   duration: 1.5,
   ease: "power2.out",
 });
+
+const app = Vue.createApp({
+  data() {
+    return { projetsArr: [] };
+  },
+  mounted() {
+    fetch("./projets.json")
+      .then((r) => r.json())
+      .then((data) => (this.projetsArr = data));
+  },
+}).mount("#app");
