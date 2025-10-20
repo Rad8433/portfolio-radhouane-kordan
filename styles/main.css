@@ -14,8 +14,8 @@ body {
 
 .nav {
   position: sticky;
-  top: 0; /* keep it pinned to the top */
-  z-index: 9999; /* sit above pinned/animated content */
+  top: 0;
+  z-index: 5;
   width: fit-content;
   margin: 1rem auto 0;
   border-radius: 50px;
@@ -42,7 +42,7 @@ body {
   border-color: rgb(154, 205, 50);
 }
 
-.btn-toggle {
+.lightdark {
   background: transparent;
   border: none;
   padding: 0;
@@ -52,7 +52,7 @@ body {
   cursor: pointer;
 }
 
-.btn-toggle svg {
+.lightdark svg {
   display: block;
 }
 
@@ -67,7 +67,7 @@ body {
 #apropos,
 #projets {
   min-height: 100vh;
-  padding-block: 3rem; /* space top & bottom */
+  padding-block: 3rem;
   background: #000;
 }
 
@@ -226,7 +226,8 @@ body {
 .projets-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.2rem;
+  gap: 4rem;
+  padding: 10%;
   align-items: stretch;
   justify-items: center;
 }
@@ -282,7 +283,7 @@ body {
 .projet-lien {
   align-self: flex-start;
   margin: 0.25rem 0 0.25rem;
-  text-decoration: underline;
+  text-decoration: none;
   color: #a9ff4a;
 }
 
@@ -319,17 +320,36 @@ body {
   opacity: 0.8;
 }
 
+/*Media query */
 @media (max-width: 900px) {
-  .projets-grid {
-    gap: 1.5rem;
+  .nav {
+    width: 80%;
+    padding: 30px;
+    margin: 0;
+  }
+  .btn-nav {
+    width: 25%;
+    font-size: 1em;
+    height: auto;
+    padding: 5px;
+  }
+  .btn-toggle {
+    width: 10%;
+    height: auto;
   }
 }
 
-/*Media query */
-@media (max-width: 576px) {
+@media (max-width: 600px) {
   .competences {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 18px 20px;
+  }
+  .projets-grid {
+    gap: 1.5rem;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    margin-left: 5%;
+    width: 90%;
+    padding: 0%;
   }
 }
 

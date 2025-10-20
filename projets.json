@@ -5,7 +5,7 @@
     "description": "Série d’autoportraits explorant la couleur et la forme pour exprimer ma personnalité à travers un style artistique unique.",
     "logiciels": ["Photoshop"],
     "image": "./medias/images/projets/projet_autoportrait_01.jpg",
-    "typeProjet": "Individuel",
+    "typeProjet": "individuel",
     "role": "Designer graphique"
   },
   {
@@ -18,7 +18,7 @@
       "label": "Voir le jeu",
       "url": "https://merlinfoxwiz.itch.io/le-devoir-du-chevalier?classId=bad76dca-86a6-451b-bbc0-70aa50a3142e&assignmentId=1c974c83-31dd-493c-9854-7b0793ee92bb&submissionId=a6ddd05f-925b-40d9-e410-30ca85a485ed"
     },
-    "typeProjet": "Individuel",
+    "typeProjet": "individuel",
     "role": "Développeur et designer de jeu"
   },
   {
@@ -27,7 +27,7 @@
     "description": "Création d’un personnage extraterrestre modélisé et riggé dans Maya, prêt à être animé.",
     "logiciels": ["Maya"],
     "image": "./medias/images/projets/pr_model_rendu_pose_salut.jpg",
-    "typeProjet": "Individuel",
+    "typeProjet": "individuel",
     "role": "Modeleur 3D et rigger"
   },
   {
@@ -40,7 +40,7 @@
       "label": "Voir le court métrage",
       "url": "https://www.youtube.com/watch?v=mhL4YEecby4"
     },
-    "typeProjet": "En équipe",
+    "typeProjet": "en équipe",
     "role": "Réalisateur et monteur"
   }
 ]

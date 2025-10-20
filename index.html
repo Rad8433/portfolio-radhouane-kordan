@@ -16,7 +16,7 @@
     <a href="#accueil" class="btn-nav">Accueil</a>
     <a href="#apropos" class="btn-nav">À propos</a>
     <a href="#projets" class="btn-nav">Projets</a>
-    <button class="btn-toggle ms-3">
+    <button class="lightdark ms-3">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none"
         stroke="yellowgreen" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <circle cx="12" cy="12" r="5"></circle>
@@ -119,13 +119,13 @@
         </a>
         <p class="projet-desc">{{ projet.description }}</p>
         <p>
-          <strong>rôle:</strong> {{ projet.role }}
+          <strong>Rôle:</strong> {{ projet.role }}
         </p>
         <p>
-          <strong>technologie:</strong> {{ projet.logiciels.join(", ").toLowerCase() }}
+          <strong>Logiciels:</strong> {{ projet.logiciels.join(", ") }}
         </p>
         <p class="projet-type">
-          <strong>Type de projet:</strong> {{ projet.typeProjet.toLowerCase() }}
+          <strong>Type de projet:</strong> {{ projet.typeProjet }}
         </p>
       </div>
     </div>
