@@ -12,147 +12,171 @@
 </head>
 
 <body>
-  <div class="nav d-flex justify-content-center mx-auto p-2 px-4 mt-4">
-    <a href="#accueil" class="btn-nav">Accueil</a>
-    <a href="#apropos" class="btn-nav">À propos</a>
-    <a href="#projets" class="btn-nav">Projets</a>
-    <button class="lightdark ms-3">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none"
-        stroke="yellowgreen" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="12" cy="12" r="5"></circle>
-        <line x1="12" y1="1" x2="12" y2="3"></line>
-        <line x1="12" y1="21" x2="12" y2="23"></line>
-        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-        <line x1="1" y1="12" x2="3" y2="12"></line>
-        <line x1="21" y1="12" x2="23" y2="12"></line>
-        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-      </svg>
-    </button>
-  </div>
+  <header>
+    <!-- Desktop Nav -->
+    <nav class="nav d-none d-lg-flex" aria-label="Primary">
+      <a href="#accueil" class="btn-nav" aria-current="page">Accueil</a>
+      <a href="#apropos" class="btn-nav">À propos</a>
+      <a href="#projets" class="btn-nav">Projets</a>
+    </nav>
 
-  <div id="accueil" class="container text-center">
-    <div class="titres">
-      <h1 class="titrePage">Portfolio</h1>
-      <h1 class="nomTitre">Radhouane Kordan</h1>
-    </div>
-  </div>
+    <!-- Mobile + Tablet Nav -->
+    <nav class="navbar navbar-dark bg-black d-lg-none fixed-top px-3" aria-label="Mobile Navigation">
+      <a class="navbar-brand fw-semibold" href="#accueil">Portfolio</a>
 
-  <div id="apropos" class="container my-5">
-    <div class="text-center mb-4">
-      <div class="ufo">
-        <img src="./medias/images/vecteezy_ufo-png-with-ai-generated_26773803 1.png" alt="ufo"
-          class="img-fluid ufo__img" />
-      </div>
-    </div>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav"
+        aria-controls="mobileNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <h2 class="hey mb-4">Hey</h2>
-        <p class="apropos mb-3">
-          Je suis étudiant en techniques d'intégration multimédia, avec un
-          fort intérêt pour le développement web Frontend et le design. Mon
-          but est de travailler dans le domaine du web, où je pourrai mettre
-          en pratique ce que j’apprends et continuer à progresser.
-        </p>
+      <div class="collapse navbar-collapse mt-2" id="mobileNav">
+        <ul class="navbar-nav ms-auto text-center gap-2 w-100">
+          <li class="nav-item"><a class="nav-link pill-link" href="#accueil">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link pill-link" href="#apropos">À propos</a></li>
+          <li class="nav-item"><a class="nav-link pill-link" href="#projets">Projets</a></li>
+        </ul>
       </div>
-      <div class="col-md-6 text-center">
-        <img src="./medias/images/Intersect.png" alt="picture of me" class="img-fluid rounded" style="max-width: 50%" />
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section id="accueil" class="container text-center" aria-labelledby="titre-portfolio">
+      <div class="titres">
+        <h1 class="titrePage" id="titre-portfolio">Portfolio</h1>
+        <h2 class="nomTitre">Radhouane Kordan</h2>
       </div>
-    </div>
-    <div class="row mt-4">
-      <div class="col info">
-        <p>Basé à Laval, Qc</p>
-        <p>(XXX) XXX-XXXX</p>
-        <p>xxxxxxxx@gmail.com</p>
+    </section>
+
+    <section id="apropos" class="container" aria-labelledby="titre-apropos">
+      <h2 class="visually-hidden" id="titre-apropos">À propos</h2>
+
+      <div class="text-center">
+        <div class="ufo">
+          <img src="./medias/images/vecteezy_ufo-png-with-ai-generated_26773803 1.png" alt="Illustration d’un OVNI"
+            class="img-fluid ufo__img" />
+        </div>
       </div>
-    </div>
-    <div class="row mt-4">
-      <div class="col text-center">
-        <h2 class="titreComp">Compétences</h2>
-        <div class="competences">
-          <div class="comp-ico">
-            <img class="icon" src="./medias/images/icones/ico_vs.png" alt="VS Code">
-            <p class="nom-icon">VS Code</p>
-          </div>
-          <div class="comp-ico">
-            <img class="icon" src="./medias/images/icones/ico_html.png" alt="HTML">
-            <p class="nom-icon">HTML</p>
-          </div>
-          <div class="comp-ico">
-            <img class="icon" src="./medias/images/icones/ico_css.png" alt="CSS">
-            <p class="nom-icon">CSS</p>
-          </div>
-          <div class="comp-ico">
-            <img class="icon" src="./medias/images/icones/ico_js.png" alt="JavaScript">
-            <p class="nom-icon">JavaScript</p>
-          </div>
-          <div class="comp-ico">
-            <img class="icon" src="./medias/images/icones/ico_wp.png" alt="WordPress">
-            <p class="nom-icon">WordPress</p>
-          </div>
-          <div class="comp-ico">
-            <img class="icon" src="./medias/images/icones/ico_figma.png" alt="Figma">
-            <p class="nom-icon">Figma</p>
-          </div>
-          <div class="comp-ico">
-            <img class="icon" src="./medias/images/icones/ico_ai.png" alt="Illustrator">
-            <p class="nom-icon">Illustrator</p>
-          </div>
-          <div class="comp-ico">
-            <img class="icon" src="./medias/images/icones/ico_ps.png" alt="Photoshop">
-            <p class="nom-icon">Photoshop</p>
+
+      <div class="row align-items-center content-block">
+        <div class="col-md-6">
+          <h3 class="hey">Hey</h3>
+          <p class="apropos">
+            Je suis étudiant en techniques d'intégration multimédia, avec un
+            fort intérêt pour le développement web Frontend et le design. Mon
+            but est de travailler dans le domaine du web, où je pourrai mettre
+            en pratique ce que j’apprends et continuer à progresser.
+          </p>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="./medias/images/Intersect.png" alt="Portrait de Radhouane" class="rounded profile" />
+        </div>
+        <div id="dispo-app" class="mt-3">
+          <p class="status-pill" :class="isAvailable ? 'dispo' : 'nondispo'">
+            {{ textDispo() }}
+          </p>
+        </div>
+      </div>
+
+      <div class="row content-block">
+        <div class="col info">
+          <address class="mb-0">
+            <p class="mb-1">Basé à Laval, Qc</p>
+            <p class="mb-1"><a href="tel:+1XXXXXXXXXX">(XXX) XXX-XXXX</a></p>
+            <p class="mb-0"><a href="mailto:xxxxxxxx@gmail.com">xxxxxxxx@gmail.com</a></p>
+          </address>
+        </div>
+      </div>
+
+      <div class="row content-block">
+        <div class="col text-center">
+          <h2 class="titreComp">Compétences</h2>
+          <div class="competences">
+            <div class="comp-ico">
+              <img class="icon" src="./medias/images/icones/ico_vs.png" alt="VS Code" />
+              <p class="nom-icon">VS Code</p>
+            </div>
+            <div class="comp-ico">
+              <img class="icon" src="./medias/images/icones/ico_html.png" alt="HTML" />
+              <p class="nom-icon">HTML</p>
+            </div>
+            <div class="comp-ico">
+              <img class="icon" src="./medias/images/icones/ico_css.png" alt="CSS" />
+              <p class="nom-icon">CSS</p>
+            </div>
+            <div class="comp-ico">
+              <img class="icon" src="./medias/images/icones/ico_js.png" alt="JavaScript" />
+              <p class="nom-icon">JavaScript</p>
+            </div>
+            <div class="comp-ico">
+              <img class="icon" src="./medias/images/icones/ico_wp.png" alt="WordPress" />
+              <p class="nom-icon">WordPress</p>
+            </div>
+            <div class="comp-ico">
+              <img class="icon" src="./medias/images/icones/ico_figma.png" alt="Figma" />
+              <p class="nom-icon">Figma</p>
+            </div>
+            <div class="comp-ico">
+              <img class="icon" src="./medias/images/icones/ico_ai.png" alt="Illustrator" />
+              <p class="nom-icon">Illustrator</p>
+            </div>
+            <div class="comp-ico">
+              <img class="icon" src="./medias/images/icones/ico_ps.png" alt="Photoshop" />
+              <p class="nom-icon">Photoshop</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div id="projets" class="mt-4">
-    <h2 class="projets-title text-center mb-4">Projets</h2>
-    <div id="app" class="projets-grid">
-      <div class="projet-card" v-for="projet in projetsArr">
-        <h3 class="projet-titre">{{ projet.nom }}</h3>
-        <img class="projet-img" :src="projet.image" :alt="projet.nom" />
-        <a v-if="projet.lien" class="projet-lien" :href="projet.lien.url" target="_blank" rel="noopener noreferrer">
-          {{ projet.lien.label }}
-        </a>
-        <p class="projet-desc">{{ projet.description }}</p>
-        <p>
-          <strong>Rôle:</strong> {{ projet.role }}
-        </p>
-        <p>
-          <strong>Logiciels:</strong> {{ projet.logiciels.join(", ") }}
-        </p>
-        <p class="projet-type">
-          <strong>Type de projet:</strong> {{ projet.typeProjet }}
-        </p>
+    </section>
+
+    <section id="projets" class="container" aria-labelledby="titre-projets">
+      <h2 class="projets-titre text-center" id="titre-projets">Projets</h2>
+
+      <div id="cartes" class="projets-grid">
+        <article class="projet-card" v-for="projet in projetsArr" :key="projet.nom">
+          <h3 class="projet-titre">{{ projet.nom }}</h3>
+
+          <a :href="projet['page-gallery']" class="projet-img-link">
+            <img class="projet-img" :src="projet.image" :alt="projet.nom" />
+          </a>
+
+          <a v-if="projet.lien" class="projet-lien" :href="projet.lien.url" target="_blank" rel="noopener noreferrer">
+            {{ projet.lien.label }}
+          </a>
+
+          <p class="projet-desc">{{ projet.description }}</p>
+          <p><strong>Rôle:</strong> {{ projet.role }}</p>
+          <p><strong>Logiciels:</strong> {{ projet.logiciels.join(", ") }}</p>
+          <p class="projet-type">
+            <strong>Type de projet:</strong> {{ projet.typeProjet }}
+          </p>
+        </article>
       </div>
-    </div>
-  </div>
-  <!-- scripts -->
-  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
-    </script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-  <script src="./scripts/main.js"></script>
+    </section>
+  </main>
+
   <footer class="footer">
     <div class="ico-sociaux">
       <a href="https://github.com/" target="_blank" aria-label="GitHub">
-        <img src="./medias/images/icones/ico-github.png" alt="icone GitHub" class="ico-sociale">
+        <img src="./medias/images/icones/ico-github.png" alt="GitHub" class="ico-sociale" />
       </a>
       <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn">
-        <img src="./medias/images/icones/ico-linkedin.png" alt="icone LinkedIn" class="ico-sociale">
+        <img src="./medias/images/icones/ico-linkedin.png" alt="LinkedIn" class="ico-sociale" />
       </a>
       <a href="mailto:tonemail@example.com" aria-label="Email">
-        <img src="./medias/images/icones/ico-email.png" alt="icone Email" class="ico-sociale">
+        <img src="./medias/images/icones/ico-email.png" alt="Email" class="ico-sociale" />
       </a>
     </div>
     <p class="texte-footer">Radhouane Kordan - 2025</p>
   </footer>
+
+  <!-- scripts -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="./scripts/main.js"></script>
 </body>
 
 </html>

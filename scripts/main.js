@@ -12,13 +12,36 @@ gsap.from(".ufo", {
   ease: "power2.out",
 });
 
-const app = Vue.createApp({
+const appCartes = Vue.createApp({
   data() {
     return { projetsArr: [] };
   },
-  mounted() {
-    fetch("./projets.json")
-      .then((r) => r.json())
-      .then((data) => (this.projetsArr = data));
+  methods: {
+    getProjets() {
+      fetch("./projets.json")
+        .then((r) => r.json())
+        .then((data) => (this.projetsArr = data));
+    },
   },
-}).mount("#app");
+  mounted() {
+    this.getProjets();
+  },
+}).mount("#cartes");
+
+const dispoApp = Vue.createApp({
+  data() {
+    return {
+      isAvailable: true,
+      seasonLabel: "Hiver 2026",
+    };
+  },
+  methods: {
+    textDispo() {
+      if (this.isAvailable) {
+        return `✅ Disponible pour un stage ${this.seasonLabel}`;
+      } else {
+        return "⛔ Déjà engagé / non disponible";
+      }
+    },
+  },
+}).mount("#dispo-app");
