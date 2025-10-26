@@ -161,6 +161,12 @@ h3 {
 .info > * {
   color: white;
 }
+
+.lien-email a {
+  text-decoration: none;
+  color: #a9ff4a;
+}
+
 .status-pill {
   display: inline-block;
   padding: 0.5rem 1.1rem;
