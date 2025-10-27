@@ -3,11 +3,14 @@ const galerieChatApp = Vue.createApp({
     return {
       imagesArr: [],
       index: 0,
+      chatAlien: "images-chat-alien.json"
     };
   },
   methods: {
     getImages() {
-      fetch("./images-chat-alien.json")
+      // aller chercher le nom du fichier de l'url "gallry-chat-alien.html"
+      //fetch("./images-chat-alien.json")
+      fetch(this.chatAlien)
         .then((r) => r.json())
         .then((data) => {
           this.imagesArr = data.images;
@@ -25,6 +28,8 @@ const galerieChatApp = Vue.createApp({
     this.getImages();
   },
 }).mount("#galerieChat");
+
+
 
 const galerieChevalierApp = Vue.createApp({
   data() {

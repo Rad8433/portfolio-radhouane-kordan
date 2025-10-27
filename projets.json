@@ -7,7 +7,8 @@
     "image": "./medias/images/projets/projet_autoportrait_01.jpg",
     "page-gallery": "gallery-portraits.html",
     "typeProjet": "individuel",
-    "role": "Designer graphique"
+    "role": "Designer graphique",
+    /*ajouter param pour chaque*/
   },
   {
     "nom": "Le devoir du chevalier",
