@@ -31,7 +31,7 @@
     "image": "./medias/images/projets/pr_model_rendu_pose_salut.jpg",
     "lien": {
       "label": "Voir le processus de création",
-      "url": "chat-alien-process.html"
+      "url": "chat-alien-processus.html"
     },
     "typeProjet": "individuel",
     "role": "Modeleur 3D et rigger",
@@ -40,7 +40,7 @@
   {
     "nom": "La Machine (stop-motion)",
     "categorie": "Vidéo",
-    "description": "Court métrage en stop-motion racontant l’histoire d’un inventeur dépassé par sa création.",
+    "description": "Court métrage en stop-motion où un écrivain voit ses angoisses prendre forme au fur et à mesure qu’il écrit, l’entraînant dans un combat contre sa propre dépression.",
     "logiciels": [
       "Dragonframe",
       "Adobe Illustrator",

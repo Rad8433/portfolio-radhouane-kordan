@@ -1,5 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
-
+//animation gsap sur l'ufo
 gsap.from(".ufo", {
   scrollTrigger: {
     trigger: ".ufo",
@@ -12,6 +12,7 @@ gsap.from(".ufo", {
   ease: "power2.out",
 });
 
+// fetch pour projets.json
 const appCartes = Vue.createApp({
   data() {
     return { projetsArr: [] };
@@ -27,12 +28,12 @@ const appCartes = Vue.createApp({
     this.getProjets();
   },
 }).mount("#cartes");
-
+//widget dispo
 const dispoApp = Vue.createApp({
   data() {
     return {
       isAvailable: true,
-      seasonLabel: "Hiver 2026",
+      seasonLabel: "Printemps 2026",
     };
   },
   methods: {

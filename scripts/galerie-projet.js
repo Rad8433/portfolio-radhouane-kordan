@@ -7,7 +7,9 @@ const galerieChatApp = Vue.createApp({
   },
   methods: {
     getImages() {
+      //chercher param
       const qs = new URLSearchParams(window.location.search);
+      //obtenir param
       const p = qs.get("p");
 
       let jsonFile = null;
@@ -31,10 +33,14 @@ const galerieChatApp = Vue.createApp({
           this.imagesArr = data.images;
         });
     },
+    //prochaine image
     nextImg() {
+      //L’index boucle en avant
       this.index = (this.index + 1) % this.imagesArr.length;
     },
+    //image précédente
     prevImg() {
+      //L’index boucle en arrière
       this.index =
         (this.index - 1 + this.imagesArr.length) % this.imagesArr.length;
     },

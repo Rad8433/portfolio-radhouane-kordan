@@ -68,7 +68,7 @@
           </p>
         </div>
         <div class="col-md-6 text-center">
-          <img src="./medias/images/Intersect.png" alt="Portrait de Radhouane" class="rounded profile" />
+          <img src="./medias/images/profile.png" alt="Portrait de Radhouane" class="profile" />
         </div>
         <div id="dispo-app" class="mt-3">
           <p class="status-pill" :class="isAvailable ? 'dispo' : 'nondispo'">
@@ -134,7 +134,7 @@
       <div id="cartes" class="projets-grid">
         <article class="projet-card" v-for="projet in projetsArr" :key="projet.nom">
           <h3 class="projet-titre">{{ projet.nom }}</h3>
-          <a :href="'gallery-projet.html' + projet.param" class="projet-img-link">
+          <a :href="'galerie-projet.html' + projet.param" class="projet-img-link">
             <img class="projet-img" :src="projet.image" :alt="projet.nom" />
           </a>
           <a v-if="projet.lien" class="projet-lien" :href="projet.lien.url" target="_blank" rel="noopener noreferrer">
