@@ -1,4 +1,4 @@
-const galerieChatApp = Vue.createApp({
+const processusApp = Vue.createApp({
   data() {
     return {
       processusArr: [],
@@ -7,7 +7,7 @@ const galerieChatApp = Vue.createApp({
   },
   methods: {
     getProcessus() {
-      fetch("./processus.json")
+      fetch("./data/processus.json")
         .then((r) => r.json())
         .then((data) => (this.processusArr = data.images));
     },

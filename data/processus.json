@@ -1,0 +1,29 @@
+{
+  "images": [
+    {
+      "src": "./medias/images/processus/PR2_CONCEPT-02.png",
+      "title": "Choix de l’univers",
+      "desc": "Sélection de l’univers parmi différentes propositions du professeur, avec la planète verte comme direction créative."
+    },
+    {
+      "src": "./medias/images/processus/PR2_CONCEPT-03.png",
+      "title": "Recherche et planche de référence",
+      "desc": "Identification des éléments visuels propres à l’univers choisi et création d’une planche de référence incluant des images inspirantes, notamment un meme populaire et le style des personnages d’Animal Crossing."
+    },
+    {
+      "src": "./medias/images/processus/PR2_CONCEPT-04.png",
+      "title": "Esquisse du personnage",
+      "desc": "Production d’une esquisse préliminaire pour définir les proportions, les formes principales et les détails du personnage avant la modélisation."
+    },
+    {
+      "src": "./medias/images/processus/PR2_CONCEPT-07.png",
+      "title": "Modélisation 3D",
+      "desc": "Réalisation de la modélisation du personnage dans Maya en conservant les proportions établies dans l’esquisse et en appliquant les techniques apprises."
+    },
+    {
+      "src": "./medias/images/processus/PR2_CONCEPT-10.png",
+      "title": "Rigging",
+      "desc": "Mise en place d’un rig pour permettre l’articulation du personnage et l’exploration de différentes poses pour le rendu final."
+    }
+  ]
+}

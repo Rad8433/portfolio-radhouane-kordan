@@ -153,8 +153,10 @@ h3 {
 
 .profile {
   width: 60%;
+  border: 3px solid #fff;
+  border-radius: 50%;
 }
-.content-block {
+.texte-apropos {
   margin-top: 2rem;
 }
 

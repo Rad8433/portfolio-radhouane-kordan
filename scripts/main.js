@@ -19,7 +19,7 @@ const appCartes = Vue.createApp({
   },
   methods: {
     getProjets() {
-      fetch("./projets.json")
+      fetch("./data/projets.json")
         .then((r) => r.json())
         .then((data) => (this.projetsArr = data));
     },

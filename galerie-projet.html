@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./styles/gallery.css">
     <title>Galerie projets</title>
 </head>
-
+<!-- App Vue qui affiche une image et description chargé depuis un fichier json -->
 <bod id="gallery-app">
     <nav class="gallery-nav">
         <a href="./index.html#projets" class="btn-retour" aria-label="Retour à l’accueil">← Retour</a>
@@ -24,9 +24,10 @@
             {{ imagesArr[index].desc }}
         </p>
 
-        <div class="galerie-controls">
-            <button class="gbtn" @click="prevImg">◀ Précédente</button>
-            <button class="gbtn" @click="nextImg">Suivante ▶</button>
+        <div class="galerie-controles">
+            <!-- boutons pour changer les images -->
+            <button class="btnControles" @click="prevImg">◀ Précédente</button>
+            <button class="btnControles" @click="nextImg">Suivante ▶</button>
         </div>
     </main>
     <script></script>

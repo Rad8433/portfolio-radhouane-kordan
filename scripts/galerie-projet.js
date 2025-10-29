@@ -1,4 +1,4 @@
-const galerieChatApp = Vue.createApp({
+const galerieApp = Vue.createApp({
   data() {
     return {
       imagesArr: [],
@@ -13,7 +13,7 @@ const galerieChatApp = Vue.createApp({
       const p = qs.get("p");
 
       let jsonFile = null;
-
+      //condition if va fetch le bon json file quand l'élément avec le même param est séléctionné
       if (p === "chat-alien") {
         jsonFile = "images-chat-alien.json";
       } else if (p === "portraits") {
@@ -27,7 +27,7 @@ const galerieChatApp = Vue.createApp({
         return;
       }
 
-      fetch(jsonFile)
+      fetch(`./data/${jsonFile}`)
         .then((r) => r.json())
         .then((data) => {
           this.imagesArr = data.images;

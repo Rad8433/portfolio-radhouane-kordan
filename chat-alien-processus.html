@@ -18,7 +18,7 @@
         <a href="./index.html#projets" class="btn-retour">← Retour</a>
     </nav>
 
-    <!-- Vue app root -->
+    <!-- App vue -->
     <div id="info-app">
         <main>
             <section class="info-frame" v-if="processusArr.length">
@@ -28,12 +28,14 @@
                 <p class="info-desc">{{ processusArr[index].desc }}</p>
             </section>
 
-            <div class="controls" v-if="processusArr.length">
-                <button class="gbtn" @click="prev" :disabled="index === 0">
+            <div class="controles" v-if="processusArr.length">
+                <!-- boutons qui permet de changer l'information afficher -->
+                <!-- attribut dynamique quand index === 0 le bouton est disabled -->
+                <button class="btnControles" @click="prev" :disabled="index === 0">
                     ◀ Précédente
                 </button>
-
-                <button class="gbtn" @click="next" :disabled="index === processusArr.length - 1">
+                <!-- attribut dynamique quand index === le length du Array -1 le bouton est disabled -->
+                <button class="btnControles" @click="next" :disabled="index === processusArr.length - 1">
                     Suivante ▶
                 </button>
             </div>

@@ -40,24 +40,25 @@
   </header>
 
   <main id="main-content">
+    <!-- Section Accueil -->
     <section id="accueil" class="container text-center" aria-labelledby="titre-portfolio">
       <div class="titres">
         <h1 class="titrePage" id="titre-portfolio">Portfolio</h1>
         <h2 class="nomTitre">Radhouane Kordan</h2>
       </div>
     </section>
-
+    <!-- Section À propos -->
     <section id="apropos" class="container" aria-labelledby="titre-apropos">
       <h2 class="visually-hidden" id="titre-apropos">À propos</h2>
 
       <div class="text-center">
         <div class="ufo">
-          <img src="./medias/images/vecteezy_ufo-png-with-ai-generated_26773803 1.png" alt="Illustration d’un OVNI"
-            class="img-fluid ufo__img" />
+          <img src="./medias/images/autres/vecteezy_ufo-png-with-ai-generated_26773803 1.png"
+            alt="Illustration d’un OVNI" class="img-fluid ufo__img" />
         </div>
       </div>
 
-      <div class="row align-items-center content-block">
+      <div class="row align-items-center texte-apropos">
         <div class="col-md-6">
           <h3 class="hey">Hey</h3>
           <p class="apropos">
@@ -68,7 +69,7 @@
           </p>
         </div>
         <div class="col-md-6 text-center">
-          <img src="./medias/images/profile.png" alt="Portrait de Radhouane" class="profile" />
+          <img src="./medias/images/autres/profile.png" alt="Portrait de Radhouane" class="profile" />
         </div>
         <div id="dispo-app" class="mt-3">
           <p class="status-pill" :class="isAvailable ? 'dispo' : 'nondispo'">
@@ -126,11 +127,11 @@
         </div>
       </div>
     </section>
-
+    <!-- Section Projets -->
     <section id="projets" class="container" aria-labelledby="titre-projets">
       <h2 class="projets-titre text-center" id="titre-projets">Projets</h2>
-
       <div id="cartes" class="projets-grid">
+        <!-- cartes qui s'affiche avec v-for -->
         <article class="projet-card" v-for="projet in projetsArr" :key="projet.nom">
           <h3 class="projet-titre">{{ projet.nom }}</h3>
           <a :href="'galerie-projet.html' + projet.param" class="projet-img-link">

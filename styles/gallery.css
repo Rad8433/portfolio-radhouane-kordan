@@ -78,14 +78,14 @@ main {
   line-height: 1.4;
 }
 
-.galerie-controls {
+.galerie-controles {
   display: flex;
   justify-content: center;
   gap: 1rem;
   margin-top: 0.5rem;
 }
 
-.gbtn {
+.btnControles {
   background: rgba(255, 255, 255, 0.1);
   border: 2px solid rgb(154, 205, 50);
   backdrop-filter: blur(10px);
@@ -98,7 +98,7 @@ main {
   transition: all 0.25s ease;
 }
 
-.gbtn:hover {
+.btnControles:hover {
   color: #000;
   background: rgb(154, 205, 50);
   border-color: rgb(154, 205, 50);

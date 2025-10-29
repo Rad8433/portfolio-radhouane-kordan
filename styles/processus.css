@@ -80,13 +80,13 @@ body {
 }
 
 /* Boutons */
-.controls {
+.controles {
   display: flex;
   justify-content: center;
   gap: 1rem;
 }
 
-.gbtn {
+.btnControles {
   background: rgba(255, 255, 255, 0.1);
   border: 2px solid rgb(154, 205, 50);
   color: rgb(154, 205, 50);
@@ -97,12 +97,12 @@ body {
   transition: 0.25s;
 }
 
-.gbtn:hover {
+.btnControles:hover {
   background: rgb(154, 205, 50);
   color: #000;
 }
 
-.gbtn:disabled {
+.btnControles:disabled {
   opacity: 0.4;
   cursor: not-allowed;
   border-color: #555;
