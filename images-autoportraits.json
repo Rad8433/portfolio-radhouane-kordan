@@ -1,0 +1,20 @@
+{
+  "images": [
+    {
+      "src": "./medias/images/projets/projet_autoportrait_01.jpg",
+      "desc": "Rendu graphique – sujet pixelisé devant un soleil rétro style synthwave"
+    },
+    {
+      "src": "./medias/images/projets/projet_autoportrait_02.jpg",
+      "desc": "Rendu graphique – silhouette du sujet devant une voiture dans un décor néon"
+    },
+    {
+      "src": "./medias/images/projets/projet_autoportrait_03.jpg",
+      "desc": "Rendu graphique – silhouette du sujet avec palmiers lumineux"
+    },
+    {
+      "src": "./medias/images/projets/projet_autoportrait_04.jpg",
+      "desc": "Rendu graphique – sujet dans un paysage synthwave au coucher de soleil"
+    }
+  ]
+}

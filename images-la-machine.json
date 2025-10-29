@@ -1,8 +1,20 @@
 {
   "images": [
-    "./medias/images/projets/projet_film_La_Machine_01.jpg",
-    "./medias/images/projets/projet_film_La_Machine_02.jpg",
-    "./medias/images/projets/projet_film_La_Machine_03.jpg",
-    "./medias/images/projets/projet_film_La_Machine_04.jpg"
+    {
+      "src": "./medias/images/projets/projet_film_La_Machine_01.jpg",
+      "desc": "Capture du film – le personnage principal en détresse"
+    },
+    {
+      "src": "./medias/images/projets/projet_film_La_Machine_02.jpg",
+      "desc": "Capture du film – manifestation visuelle des inquiétudes"
+    },
+    {
+      "src": "./medias/images/projets/projet_film_La_Machine_03.jpg",
+      "desc": "Capture du film – mélange de prise de vue réelle et motion design"
+    },
+    {
+      "src": "./medias/images/projets/projet_film_La_Machine_04.jpg",
+      "desc": "Capture du film – confrontation avec ses pensées sombres"
+    }
   ]
 }

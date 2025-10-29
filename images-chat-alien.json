@@ -1,8 +1,20 @@
 {
   "images": [
-    "./medias/images/projets/pr_model_rendu_pose_salut.jpg",
-    "./medias/images/projets/pr_model_rendu_pose_t.jpg",
-    "./medias/images/projets/pr_model_rendu_pose_t_cote.jpg",
-    "./medias/images/projets/pr_model_rendu_pose_t_derriere.jpg"
+    {
+      "src": "./medias/images/projets/pr_model_rendu_pose_salut.jpg",
+      "desc": "Rendu 3D – pose de face du personnage"
+    },
+    {
+      "src": "./medias/images/projets/pr_model_rendu_pose_t.jpg",
+      "desc": "Rendu 3D – pose en T utilisée pour le rigging"
+    },
+    {
+      "src": "./medias/images/projets/pr_model_rendu_pose_t_cote.jpg",
+      "desc": "Rendu 3D – vue de côté du personnage"
+    },
+    {
+      "src": "./medias/images/projets/pr_model_rendu_pose_t_derriere.jpg",
+      "desc": "Rendu 3D – vue arrière du personnage"
+    }
   ]
 }

@@ -1,6 +1,6 @@
 [
   {
-    "nom": "Portraits",
+    "nom": "Autoportraits",
     "categorie": "Art numérique",
     "description": "Série d’autoportraits explorant la couleur et la forme pour exprimer ma personnalité à travers un style artistique unique.",
     "logiciels": ["Photoshop"],
@@ -12,11 +12,11 @@
   {
     "nom": "Le devoir du chevalier",
     "categorie": "Jeux vidéo",
-    "description": "Jeu 2D interactif où le joueur incarne un chevalier en quête d’honneur. Un projet combinant code et design ludique.",
+    "description": "Jeu 2D interactif jouable dans un navigateur, développé avec Phaser. Le joueur incarne un chevalier qui parcourt un niveau et affronte des ennemis.",
     "logiciels": ["HTML", "CSS", "JavaScript (Phaser)"],
     "image": "./medias/images/projets/devoir_du_chevalier_menu.png",
     "lien": {
-      "label": "Voir le jeu",
+      "label": "Jouer le jeu",
       "url": "https://merlinfoxwiz.itch.io/le-devoir-du-chevalier?classId=bad76dca-86a6-451b-bbc0-70aa50a3142e&assignmentId=1c974c83-31dd-493c-9854-7b0793ee92bb&submissionId=a6ddd05f-925b-40d9-e410-30ca85a485ed"
     },
     "typeProjet": "individuel",
@@ -26,9 +26,13 @@
   {
     "nom": "Chat-alien",
     "categorie": "3D",
-    "description": "Création d’un personnage extraterrestre modélisé et riggé dans Maya, prêt à être animé.",
+    "description": "Création d’un personnage extraterrestre en 3D basé sur un univers choisi, modélisé et riggé dans Maya. Le projet inclut l’ajout d’un squelette et de contrôleurs pour rendre le personnage entièrement animable.",
     "logiciels": ["Maya"],
     "image": "./medias/images/projets/pr_model_rendu_pose_salut.jpg",
+    "lien": {
+      "label": "Voir le processus de création",
+      "url": "chat-alien-process.html"
+    },
     "typeProjet": "individuel",
     "role": "Modeleur 3D et rigger",
     "param": "?p=chat-alien"
@@ -50,7 +54,12 @@
       "url": "https://www.youtube.com/watch?v=mhL4YEecby4"
     },
     "typeProjet": "en équipe",
-    "role": "Réalisateur et monteur",
+    "role": "Réalisateur et animateurs",
+    "coequipiers": [
+      "Ahmed Kaïsoumi (direction artistique et animateur)",
+      "Justin Monpetit (comédien et animateur)",
+      "Félix Lévesque (direction photo et animateur)"
+    ],
     "param": "?p=la-machine"
   }
 ]

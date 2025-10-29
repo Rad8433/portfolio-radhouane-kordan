@@ -146,8 +146,15 @@
           <p class="projet-type">
             <strong>Type de projet:</strong> {{ projet.typeProjet }}
           </p>
+          <div class="projet-coequipiers" v-if="projet.coequipiers && projet.coequipiers.length">
+            <strong style="color: white;">Coéquipiers :</strong>
+            <ul>
+              <li v-for="(membre, i) in projet.coequipiers" :key="i">
+                {{ membre }}
+              </li>
+            </ul>
+          </div>
         </article>
-      </div>
     </section>
   </main>
 

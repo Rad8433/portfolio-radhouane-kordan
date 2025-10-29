@@ -1,0 +1,20 @@
+{
+  "images": [
+    {
+      "src": "./medias/images/projets/devoir_du_chevalier_menu.png",
+      "desc": "Capture du jeu – écran titre"
+    },
+    {
+      "src": "./medias/images/projets/devoir_du_chevalier_01.png",
+      "desc": "Capture du jeu – début du niveau"
+    },
+    {
+      "src": "./medias/images/projets/devoir_du_chevalier_02.png",
+      "desc": "Capture du jeu – combat contre un squelette"
+    },
+    {
+      "src": "./medias/images/projets/devoir_du_chevalier_03.png",
+      "desc": "Capture du jeu – boss envoyant des projectiles"
+    }
+  ]
+}

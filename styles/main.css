@@ -152,7 +152,7 @@ h3 {
 }
 
 .profile {
-  width: 48%;
+  width: 60%;
 }
 .content-block {
   margin-top: 2rem;
@@ -327,6 +327,22 @@ h3 {
   color: #a9ff4a;
 }
 
+.projet-coequipiers {
+  margin-top: 0.5rem;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.projet-coequipiers ul {
+  margin: 0.4rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.projet-coequipiers li {
+  line-height: 1.4;
+  margin-bottom: 0.2rem;
+}
+
 /* Footer */
 .footer {
   background-color: #000;
@@ -374,10 +390,8 @@ h3 {
 
   .hey {
     font-size: 2.5rem;
-    text-align: center;
-  }
-  #apropos img {
-    max-width: 80% !important;
+    text-align: start;
+    margin-left: 8%;
   }
 
   .profile {
@@ -389,7 +403,7 @@ h3 {
     line-height: 1.6;
     max-width: 34ch;
     margin-inline: auto;
-    text-align: center;
+    text-align: start;
   }
 
   .status-pill {
@@ -472,11 +486,19 @@ h3 {
     line-height: 1.7;
     text-align: left;
     width: 100%;
-    padding-right: 1rem;
   }
 
   .profile {
-    width: 80%;
+    width: 60%;
+  }
+
+  .info {
+    text-align: center;
+  }
+  .info address,
+  .info p {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #apropos .col-md-6:last-child {

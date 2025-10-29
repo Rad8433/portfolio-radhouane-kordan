@@ -70,6 +70,14 @@ main {
   border-radius: 28px;
 }
 
+.galerie-desc {
+  max-width: 70%;
+  margin: -0.5rem auto 0;
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.4;
+}
+
 .galerie-controls {
   display: flex;
   justify-content: center;
@@ -114,5 +122,11 @@ main {
   .gbtn {
     padding: 0.45rem 0.85rem;
     font-size: 0.95rem;
+  }
+  @media (max-width: 600px) {
+    .galerie-desc {
+      max-width: 90%;
+      font-size: 0.95rem;
+    }
   }
 }

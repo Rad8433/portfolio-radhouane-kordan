@@ -3,7 +3,6 @@ const galerieChatApp = Vue.createApp({
     return {
       imagesArr: [],
       index: 0,
-      /* chatAlien: "images-chat-alien.json"*/
     };
   },
   methods: {
@@ -16,7 +15,7 @@ const galerieChatApp = Vue.createApp({
       if (p === "chat-alien") {
         jsonFile = "images-chat-alien.json";
       } else if (p === "portraits") {
-        jsonFile = "images-portraits.json";
+        jsonFile = "images-autoportraits.json";
       } else if (p === "chevalier") {
         jsonFile = "images-chevalier.json";
       } else if (p === "la-machine") {
