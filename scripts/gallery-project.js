@@ -3,18 +3,30 @@ const galerieChatApp = Vue.createApp({
     return {
       imagesArr: [],
       index: 0,
-     /* chatAlien: "images-chat-alien.json"*/
+      /* chatAlien: "images-chat-alien.json"*/
     };
   },
   methods: {
     getImages() {
-      // aller chercher le paramètre d'url p et storer le resultat dans une variable.
-      //fetch("./images-chat-alien.json")
-      const urlparam = new URLSearchParams(window.location.search);
-      const paramValue = urlparam.get('p');
-      const hasParam = urlparam.has('p');
-      console.log(paramValue);
-      fetch("images-"+paramValue+".json")
+      const qs = new URLSearchParams(window.location.search);
+      const p = qs.get("p");
+
+      let jsonFile = null;
+
+      if (p === "chat-alien") {
+        jsonFile = "images-chat-alien.json";
+      } else if (p === "portraits") {
+        jsonFile = "images-portraits.json";
+      } else if (p === "chevalier") {
+        jsonFile = "images-chevalier.json";
+      } else if (p === "la-machine") {
+        jsonFile = "images-la-machine.json";
+      } else {
+        console.error("Paramètre inconnu:", p);
+        return;
+      }
+
+      fetch(jsonFile)
         .then((r) => r.json())
         .then((data) => {
           this.imagesArr = data.images;
@@ -32,5 +44,3 @@ const galerieChatApp = Vue.createApp({
     this.getImages();
   },
 }).mount("#gallery-app");
-
-

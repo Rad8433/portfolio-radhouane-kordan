@@ -128,23 +128,18 @@
       </div>
     </section>
 
-    <a href="gallery-project.html?p=chat-alien"> BOnjour</a>
-
     <section id="projets" class="container" aria-labelledby="titre-projets">
       <h2 class="projets-titre text-center" id="titre-projets">Projets</h2>
 
       <div id="cartes" class="projets-grid">
         <article class="projet-card" v-for="projet in projetsArr" :key="projet.nom">
           <h3 class="projet-titre">{{ projet.nom }}</h3>
-<!--  <a :href="projet['page-gallery']" class="projet-img-link"> -->
-          <a :href="projet.html?p=chat-alien" class="projet-img-link">
+          <a :href="'gallery-projet.html' + projet.param" class="projet-img-link">
             <img class="projet-img" :src="projet.image" :alt="projet.nom" />
           </a>
-
           <a v-if="projet.lien" class="projet-lien" :href="projet.lien.url" target="_blank" rel="noopener noreferrer">
             {{ projet.lien.label }}
           </a>
-
           <p class="projet-desc">{{ projet.description }}</p>
           <p><strong>Rôle:</strong> {{ projet.role }}</p>
           <p><strong>Logiciels:</strong> {{ projet.logiciels.join(", ") }}</p>

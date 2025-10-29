@@ -5,10 +5,9 @@
     "description": "Série d’autoportraits explorant la couleur et la forme pour exprimer ma personnalité à travers un style artistique unique.",
     "logiciels": ["Photoshop"],
     "image": "./medias/images/projets/projet_autoportrait_01.jpg",
-    "page-gallery": "gallery-portraits.html",
     "typeProjet": "individuel",
     "role": "Designer graphique",
-    /*ajouter param pour chaque*/
+    "param": "?p=portraits"
   },
   {
     "nom": "Le devoir du chevalier",
@@ -16,13 +15,13 @@
     "description": "Jeu 2D interactif où le joueur incarne un chevalier en quête d’honneur. Un projet combinant code et design ludique.",
     "logiciels": ["HTML", "CSS", "JavaScript (Phaser)"],
     "image": "./medias/images/projets/devoir_du_chevalier_menu.png",
-    "page-gallery": "gallery-devoir-chevalier.html",
     "lien": {
       "label": "Voir le jeu",
       "url": "https://merlinfoxwiz.itch.io/le-devoir-du-chevalier?classId=bad76dca-86a6-451b-bbc0-70aa50a3142e&assignmentId=1c974c83-31dd-493c-9854-7b0793ee92bb&submissionId=a6ddd05f-925b-40d9-e410-30ca85a485ed"
     },
     "typeProjet": "individuel",
-    "role": "Développeur et designer de jeu"
+    "role": "Développeur et designer de jeu",
+    "param": "?p=chevalier"
   },
   {
     "nom": "Chat-alien",
@@ -30,9 +29,9 @@
     "description": "Création d’un personnage extraterrestre modélisé et riggé dans Maya, prêt à être animé.",
     "logiciels": ["Maya"],
     "image": "./medias/images/projets/pr_model_rendu_pose_salut.jpg",
-    "page-gallery": "gallery-chat-alien.html",
     "typeProjet": "individuel",
-    "role": "Modeleur 3D et rigger"
+    "role": "Modeleur 3D et rigger",
+    "param": "?p=chat-alien"
   },
   {
     "nom": "La Machine (stop-motion)",
@@ -51,6 +50,7 @@
       "url": "https://www.youtube.com/watch?v=mhL4YEecby4"
     },
     "typeProjet": "en équipe",
-    "role": "Réalisateur et monteur"
+    "role": "Réalisateur et monteur",
+    "param": "?p=la-machine"
   }
 ]
