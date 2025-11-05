@@ -79,6 +79,18 @@ h3 {
   padding-bottom: 0.5rem;
 }
 
+.navbar.fixed-top {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.navbar.fixed-top.px-3 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
 #mobileNav {
   padding-top: 0.4rem;
   background: #000;
