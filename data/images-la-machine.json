@@ -9,12 +9,12 @@
       "desc": "Capture du film – manifestation visuelle des inquiétudes"
     },
     {
-      "src": "./medias/images/projets/projet_film_La_Machine_03.jpg",
-      "desc": "Capture du film – vue de face du personnage principale"
-    },
-    {
       "src": "./medias/images/projets/projet_film_La_Machine_04.jpg",
       "desc": "Capture du film – mélange de prise de vue réelle et motion design"
+    },
+    {
+      "src": "./medias/images/projets/projet_film_La_Machine_03.jpg",
+      "desc": "Capture du film – vue de face du personnage principale"
     }
   ]
 }
