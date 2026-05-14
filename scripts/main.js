@@ -32,7 +32,7 @@ const appCartes = Vue.createApp({
 const dispoApp = Vue.createApp({
   data() {
     return {
-      isAvailable: true,
+      isAvailable: false,
       seasonLabel: "Printemps 2026",
     };
   },

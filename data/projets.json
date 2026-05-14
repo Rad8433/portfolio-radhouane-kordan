@@ -34,8 +34,23 @@
       "url": "chat-alien-processus.html"
     },
     "typeProjet": "individuel",
-    "role": "Modeleur 3D et rigger",
+    "role": "Modélisateur 3D et rigger",
     "param": "?p=chat-alien"
+  },
+  {
+    "nom": "Magie et machines",
+    "categorie": "3D, Vidéo, Audio",
+    "description": "Présentation d'assets 3D de fantaisie et de science-fiction.",
+    "logiciels": ["Blender, Davinci, After effects, Reaper"],
+    "image": "./medias/images/projets/magie_machines/titre_magie_machines.png",
+    "lien": {
+      "label": "Voir la vidéo",
+      "url": "https://www.youtube.com/watch?v=T6O1Lgj8zUo"
+    },
+    "typeProjet": "Équipe",
+    "role": "Modélisateur 3D, animateur, concepteur sonore",
+    "coequipiers": ["Érick Ouellette (Modélisateur, animateur)"],
+    "param": "?p=magie-machines"
   },
   {
     "nom": "La Machine (stop-motion)",

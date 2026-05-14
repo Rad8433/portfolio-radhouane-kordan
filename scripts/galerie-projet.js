@@ -20,6 +20,8 @@ const galerieApp = Vue.createApp({
         jsonFile = "images-autoportraits.json";
       } else if (p === "chevalier") {
         jsonFile = "images-chevalier.json";
+      } else if (p === "magie-machines") {
+        jsonFile = "magie-machines.json";
       } else if (p === "la-machine") {
         jsonFile = "images-la-machine.json";
       } else {
