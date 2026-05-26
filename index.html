@@ -62,19 +62,13 @@
         <div class="col-md-6">
           <h3 class="hey">Hey</h3>
           <p class="apropos">
-            Je suis étudiant en Techniques d’intégration multimédia, animé par une passion pour la technologie et l’art.
-            Je m’intéresse particulièrement aux installations multimédias et aux expériences interactives. Mon objectif
-            est d’appliquer mes compétences dans des projets créatifs tout en continuant à apprendre auprès de
-            professionnels du milieu.
+            Je suis étudiant finissant en Techniques d’intégration multimédia, passionné par le web et le design. Je
+            cherche actuellement un emploi afin de mettre en pratique mes compétences dans des projets créatifs et de
+            continuer à évoluer auprès de professionnels du milieu.
           </p>
         </div>
         <div class="col-md-6 text-center">
           <img src="./medias/images/autres/profile.png" alt="Portrait de Radhouane" class="profile" />
-        </div>
-        <div id="dispo-app" class="mt-3">
-          <p class="status-pill" :class="isAvailable ? 'dispo' : 'nondispo'">
-            {{ textDispo() }}
-          </p>
         </div>
       </div>
 
@@ -84,6 +78,11 @@
             <p class="mb-1">Basé à Laval, Qc</p>
             <p class="mb-0 lien-email"><a href="mailto:radhkordan19@gmail.com">radhkordan19@gmail.com</a></p>
           </address>
+        </div>
+        <div id="dispo-app" class="mt-3">
+          <p class="status-pill" :class="isAvailable ? 'dispo' : 'nondispo'">
+            {{ textDispo() }}
+          </p>
         </div>
       </div>
 

@@ -1,6 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
 
-// animation gsap sur l'ufo
 gsap.from(".ufo", {
   scrollTrigger: {
     trigger: ".ufo",
@@ -11,9 +10,17 @@ gsap.from(".ufo", {
   opacity: 0,
   duration: 1.5,
   ease: "power2.out",
+  onComplete: () => {
+    gsap.to(".ufo", {
+      y: "-=15",
+      duration: 2,
+      repeat: -1,
+      yoyo: true,
+      ease: "sine.inOut",
+    });
+  },
 });
 
-// fetch pour projets.json
 const appCartes = Vue.createApp({
   data() {
     return { projetsArr: [] };
@@ -36,15 +43,14 @@ const appCartes = Vue.createApp({
 const dispoApp = Vue.createApp({
   data() {
     return {
-      isAvailable: false,
-      seasonLabel: "Printemps 2026",
+      isAvailable: true,
     };
   },
 
   methods: {
     textDispo() {
       if (this.isAvailable) {
-        return `✅ Disponible pour un stage ${this.seasonLabel}`;
+        return `✅ À la recherche d'un emploi`;
       } else {
         return "⛔ Déjà engagé / non disponible";
       }
@@ -52,7 +58,6 @@ const dispoApp = Vue.createApp({
   },
 }).mount("#dispo-app");
 
-// galerie / processus
 const galerieApp = Vue.createApp({
   data() {
     return {
@@ -67,7 +72,7 @@ const galerieApp = Vue.createApp({
     getData() {
       const qs = new URLSearchParams(window.location.search);
       const p = qs.get("p");
-      const mode = qs.get("mode"); // 👈 ADD THIS
+      const mode = qs.get("mode");
 
       fetch("./data/projets.json")
         .then((r) => r.json())
@@ -82,7 +87,6 @@ const galerieApp = Vue.createApp({
           this.imagesArr = project.images || [];
           this.processusArr = project.processus || [];
 
-          // 👇 THIS IS THE KEY FIX
           if (mode === "processus" && this.processusArr.length) {
             this.mode = "processus";
           } else {
