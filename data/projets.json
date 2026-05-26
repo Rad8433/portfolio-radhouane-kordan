@@ -3,11 +3,33 @@
     "nom": "Autoportraits",
     "categorie": "Art numérique",
     "description": "Série d’autoportraits réalisés dans Photoshop, inspirés d’un style artistique choisi (Synthwave), afin d’explorer différents outils, effets et techniques graphiques.",
+
     "logiciels": ["Photoshop"],
+
     "image": "./medias/images/projets/projet_autoportrait_01.jpg",
+
     "typeProjet": "individuel",
     "role": "Designer graphique",
-    "param": "?p=portraits"
+    "param": "?p=portraits",
+
+    "images": [
+      {
+        "src": "./medias/images/projets/projet_autoportrait_01.jpg",
+        "desc": "Rendu graphique – sujet pixelisé devant un soleil rétro style synthwave"
+      },
+      {
+        "src": "./medias/images/projets/projet_autoportrait_02.jpg",
+        "desc": "Rendu graphique – silhouette du sujet devant une voiture dans un décor néon"
+      },
+      {
+        "src": "./medias/images/projets/projet_autoportrait_03.jpg",
+        "desc": "Rendu graphique – silhouette du sujet avec palmiers lumineux"
+      },
+      {
+        "src": "./medias/images/projets/projet_autoportrait_04.jpg",
+        "desc": "Rendu graphique – sujet dans un paysage synthwave au coucher de soleil"
+      }
+    ]
   },
   {
     "nom": "Le devoir du chevalier",
@@ -15,66 +37,192 @@
     "description": "Jeu 2D interactif jouable dans un navigateur, développé avec Phaser. Le joueur incarne un chevalier qui parcourt un niveau et affronte des ennemis.",
     "logiciels": ["HTML", "CSS", "JavaScript (Phaser)"],
     "image": "./medias/images/projets/devoir_du_chevalier_menu.png",
+
     "lien": {
       "label": "Jouer le jeu",
       "url": "https://merlinfoxwiz.itch.io/le-devoir-du-chevalier?classId=bad76dca-86a6-451b-bbc0-70aa50a3142e&assignmentId=1c974c83-31dd-493c-9854-7b0793ee92bb&submissionId=a6ddd05f-925b-40d9-e410-30ca85a485ed"
     },
+
     "typeProjet": "individuel",
     "role": "Développeur et designer de jeu",
-    "param": "?p=chevalier"
+    "param": "?p=chevalier",
+
+    "images": [
+      {
+        "src": "./medias/images/projets/devoir_du_chevalier_menu.png",
+        "desc": "Capture du jeu – écran titre"
+      },
+      {
+        "src": "./medias/images/projets/devoir_du_chevalier_01.png",
+        "desc": "Capture du jeu – début du niveau"
+      },
+      {
+        "src": "./medias/images/projets/devoir_du_chevalier_02.png",
+        "desc": "Capture du jeu – combat contre un squelette"
+      },
+      {
+        "src": "./medias/images/projets/devoir_du_chevalier_03.png",
+        "desc": "Capture du jeu – boss envoyant des projectiles"
+      }
+    ]
   },
+
   {
     "nom": "Chat-alien",
     "categorie": "3D",
     "description": "Création d’un personnage extraterrestre en 3D basé sur un univers choisi, modélisé et riggé dans Maya. Le projet inclut l’ajout d’un squelette et de contrôleurs pour rendre le personnage entièrement animable.",
     "logiciels": ["Maya"],
     "image": "./medias/images/projets/pr_model_rendu_pose_salut.jpg",
+
     "lien": {
       "label": "Voir le processus de création",
-      "url": "chat-alien-processus.html"
+      "url": "galerie-projet.html?p=chat-alien"
     },
+
     "typeProjet": "individuel",
     "role": "Modélisateur 3D et rigger",
-    "param": "?p=chat-alien"
+    "param": "?p=chat-alien",
+
+    "images": [
+      {
+        "src": "./medias/images/projets/pr_model_rendu_pose_salut.jpg",
+        "desc": "Rendu 3D – pose de face du personnage"
+      },
+      {
+        "src": "./medias/images/projets/pr_model_rendu_pose_t.jpg",
+        "desc": "Rendu 3D – pose en T utilisée pour le rigging"
+      },
+      {
+        "src": "./medias/images/projets/pr_model_rendu_pose_t_cote.jpg",
+        "desc": "Rendu 3D – vue de côté du personnage"
+      },
+      {
+        "src": "./medias/images/projets/pr_model_rendu_pose_t_derriere.jpg",
+        "desc": "Rendu 3D – vue arrière du personnage"
+      }
+    ],
+
+    "processus": [
+      {
+        "src": "./medias/images/processus/PR2_CONCEPT-02.png",
+        "title": "Choix de l’univers",
+        "desc": "Sélection de l’univers parmi différentes propositions du professeur, avec la planète verte comme direction créative."
+      },
+      {
+        "src": "./medias/images/processus/PR2_CONCEPT-03.png",
+        "title": "Recherche et planche de référence",
+        "desc": "Identification des éléments visuels propres à l’univers choisi et création d’une planche de référence incluant des images inspirantes, notamment un meme populaire et le style des personnages d’Animal Crossing."
+      },
+      {
+        "src": "./medias/images/processus/PR2_CONCEPT-04.png",
+        "title": "Esquisse du personnage",
+        "desc": "Production d’une esquisse préliminaire pour définir les proportions, les formes principales et les détails du personnage avant la modélisation."
+      },
+      {
+        "src": "./medias/images/processus/PR2_CONCEPT-07.png",
+        "title": "Modélisation 3D",
+        "desc": "Réalisation de la modélisation du personnage dans Maya en conservant les proportions établies dans l’esquisse et en appliquant les techniques apprises."
+      },
+      {
+        "src": "./medias/images/processus/PR2_CONCEPT-10.png",
+        "title": "Rigging",
+        "desc": "Mise en place d’un rig pour permettre l’articulation du personnage et l’exploration de différentes poses pour le rendu final."
+      }
+    ]
   },
+
   {
     "nom": "Magie et machines",
     "categorie": "3D, Vidéo, Audio",
-    "description": "Présentation d'assets 3D de fantaisie et de science-fiction.",
-    "logiciels": ["Blender, Davinci, After effects, Reaper"],
+    "description": "Présentation d’assets 3D de fantaisie et de science-fiction.",
+
+    "logiciels": ["Blender", "DaVinci Resolve", "After Effects", "Reaper"],
+
     "image": "./medias/images/projets/magie_machines/titre_magie_machines.png",
+
     "lien": {
       "label": "Voir la vidéo",
       "url": "https://www.youtube.com/watch?v=T6O1Lgj8zUo"
     },
+
     "typeProjet": "Équipe",
     "role": "Modélisateur 3D, animateur, concepteur sonore",
+
     "coequipiers": ["Érick Ouellette (Modélisateur, animateur)"],
-    "param": "?p=magie-machines"
+
+    "param": "?p=magie-machines",
+
+    "images": [
+      {
+        "src": "./medias/images/projets/magie_machines/decor.png",
+        "desc": "Capture du logiciel montrant le décor utilisé dans l’animation."
+      },
+      {
+        "src": "./medias/images/projets/magie_machines/barbare_repos.png",
+        "desc": "Personnage animé en état de repos"
+      },
+      {
+        "src": "./medias/images/projets/magie_machines/gobelin_marche.png",
+        "desc": "Personnage animé en état de marche"
+      },
+      {
+        "src": "./medias/images/projets/magie_machines/sorcier_glace.png",
+        "desc": "Personnage en T-pose avec baguette magique"
+      },
+      {
+        "src": "./medias/images/projets/magie_machines/mousquetaire.png",
+        "desc": "Personnage en T-pose avec arme"
+      }
+    ]
   },
+
   {
     "nom": "La Machine (stop-motion)",
     "categorie": "Vidéo",
     "description": "Court métrage en stop-motion où un écrivain voit ses angoisses prendre forme au fur et à mesure qu’il écrit, l’entraînant dans un combat contre sa propre dépression.",
+
     "logiciels": [
       "Dragonframe",
       "Adobe Illustrator",
       "After Effects",
       "DaVinci Resolve"
     ],
+
     "image": "./medias/images/projets/projet_film_La_Machine_01.jpg",
-    "page-gallery": "gallery-la-machine.html",
+
     "lien": {
       "label": "Voir le court métrage",
       "url": "https://www.youtube.com/watch?v=mhL4YEecby4"
     },
+
     "typeProjet": "en équipe",
-    "role": "Réalisateur et animateurs",
+    "role": "Réalisateur et animateur",
+
     "coequipiers": [
       "Ahmed Kaïsoumi (direction artistique et animateur)",
       "Justin Montpetit (comédien et animateur)",
       "Félix Lévesque (direction photo et animateur)"
     ],
-    "param": "?p=la-machine"
+
+    "param": "?p=la-machine",
+
+    "images": [
+      {
+        "src": "./medias/images/projets/projet_film_La_Machine_01.jpg",
+        "desc": "Capture du film – le personnage principal en détresse"
+      },
+      {
+        "src": "./medias/images/projets/projet_film_La_Machine_02.jpg",
+        "desc": "Capture du film – manifestation visuelle des inquiétudes"
+      },
+      {
+        "src": "./medias/images/projets/projet_film_La_Machine_04.jpg",
+        "desc": "Capture du film – mélange de prise de vue réelle et motion design"
+      },
+      {
+        "src": "./medias/images/projets/projet_film_La_Machine_03.jpg",
+        "desc": "Capture du film – vue de face du personnage principal"
+      }
+    ]
   }
 ]
