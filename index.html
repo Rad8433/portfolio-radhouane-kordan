@@ -23,17 +23,15 @@
     <!-- Mobile + Tablet Nav -->
     <nav class="navbar navbar-dark bg-black d-lg-none fixed-top" aria-label="Mobile Navigation">
       <a class="navbar-brand fw-semibold" href="#accueil">Portfolio</a>
-
       <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav"
         aria-controls="mobileNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse mt-2" id="mobileNav">
         <ul class="navbar-nav ms-auto text-center gap-2 w-100">
-          <li class="nav-item"><a class="nav-link pill-link" href="#accueil">Accueil</a></li>
-          <li class="nav-item"><a class="nav-link pill-link" href="#apropos">À propos</a></li>
-          <li class="nav-item"><a class="nav-link pill-link" href="#projets">Projets</a></li>
+          <li class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#apropos">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projets">Projets</a></li>
         </ul>
       </div>
     </nav>
@@ -47,6 +45,7 @@
         <h2 class="nomTitre">Radhouane Kordan</h2>
       </div>
     </section>
+
     <!-- Section À propos -->
     <section id="apropos" class="container" aria-labelledby="titre-apropos">
       <h2 class="visually-hidden" id="titre-apropos">À propos</h2>
@@ -54,7 +53,7 @@
       <div class="text-center">
         <div class="ufo">
           <img src="./medias/images/autres/vecteezy_ufo-png-with-ai-generated_26773803 1.png"
-            alt="Illustration d’un OVNI" class="img-fluid ufo__img" />
+            alt="Illustration d'un OVNI" class="img-fluid ufo__img" />
         </div>
       </div>
 
@@ -62,7 +61,7 @@
         <div class="col-md-6">
           <h3 class="hey">Hey</h3>
           <p class="apropos">
-            Je suis étudiant finissant en Techniques d’intégration multimédia, passionné par le web et le design. Je
+            Je suis étudiant finissant en Techniques d'intégration multimédia, passionné par le web et le design. Je
             cherche actuellement un emploi afin de mettre en pratique mes compétences dans des projets créatifs et de
             continuer à évoluer auprès de professionnels du milieu.
           </p>
@@ -72,7 +71,7 @@
         </div>
       </div>
 
-      <div class="row content-block">
+      <div class="row">
         <div class="col info">
           <address class="mb-0">
             <p class="mb-1">Basé à Laval, Qc</p>
@@ -86,52 +85,50 @@
         </div>
       </div>
     </section>
-    <section>
-      <div class="row content-block">
-        <div class="col text-center">
-          <h2 class="titreComp">Compétences</h2>
-          <div class="competences">
-            <div class="comp-ico">
-              <img class="icon" src="./medias/images/icones/ico_vs.png" alt="VS Code" />
-              <p class="nom-icon">VS Code</p>
-            </div>
-            <div class="comp-ico">
-              <img class="icon" src="./medias/images/icones/ico_html.png" alt="HTML" />
-              <p class="nom-icon">HTML</p>
-            </div>
-            <div class="comp-ico">
-              <img class="icon" src="./medias/images/icones/ico_css.png" alt="CSS" />
-              <p class="nom-icon">CSS</p>
-            </div>
-            <div class="comp-ico">
-              <img class="icon" src="./medias/images/icones/ico_js.png" alt="JavaScript" />
-              <p class="nom-icon">JavaScript</p>
-            </div>
-            <div class="comp-ico">
-              <img class="icon" src="./medias/images/icones/ico_wp.png" alt="WordPress" />
-              <p class="nom-icon">WordPress</p>
-            </div>
-            <div class="comp-ico">
-              <img class="icon" src="./medias/images/icones/ico_figma.png" alt="Figma" />
-              <p class="nom-icon">Figma</p>
-            </div>
-            <div class="comp-ico">
-              <img class="icon" src="./medias/images/icones/ico_ai.png" alt="Illustrator" />
-              <p class="nom-icon">Illustrator</p>
-            </div>
-            <div class="comp-ico">
-              <img class="icon" src="./medias/images/icones/ico_ps.png" alt="Photoshop" />
-              <p class="nom-icon">Photoshop</p>
-            </div>
-          </div>
+
+    <!-- Section Compétences -->
+    <section class="container">
+      <h2 class="titreComp text-center">Compétences</h2>
+      <div class="competences">
+        <div class="comp-ico">
+          <img class="icon" src="./medias/images/icones/ico_vs.png" alt="VS Code" />
+          <p class="nom-icon">VS Code</p>
+        </div>
+        <div class="comp-ico">
+          <img class="icon" src="./medias/images/icones/ico_html.png" alt="HTML" />
+          <p class="nom-icon">HTML</p>
+        </div>
+        <div class="comp-ico">
+          <img class="icon" src="./medias/images/icones/ico_css.png" alt="CSS" />
+          <p class="nom-icon">CSS</p>
+        </div>
+        <div class="comp-ico">
+          <img class="icon" src="./medias/images/icones/ico_js.png" alt="JavaScript" />
+          <p class="nom-icon">JavaScript</p>
+        </div>
+        <div class="comp-ico">
+          <img class="icon" src="./medias/images/icones/ico_wp.png" alt="WordPress" />
+          <p class="nom-icon">WordPress</p>
+        </div>
+        <div class="comp-ico">
+          <img class="icon" src="./medias/images/icones/ico_figma.png" alt="Figma" />
+          <p class="nom-icon">Figma</p>
+        </div>
+        <div class="comp-ico">
+          <img class="icon" src="./medias/images/icones/ico_ai.png" alt="Illustrator" />
+          <p class="nom-icon">Illustrator</p>
+        </div>
+        <div class="comp-ico">
+          <img class="icon" src="./medias/images/icones/ico_ps.png" alt="Photoshop" />
+          <p class="nom-icon">Photoshop</p>
         </div>
       </div>
     </section>
+
     <!-- Section Projets -->
     <section id="projets" class="container" aria-labelledby="titre-projets">
       <h2 class="projets-titre text-center" id="titre-projets">Projets</h2>
       <div id="cartes" class="projets-grid">
-        <!-- cartes qui s'affiche avec v-for -->
         <article class="projet-card" v-for="projet in projetsArr" :key="projet.nom">
           <h3 class="projet-titre">{{ projet.nom }}</h3>
           <a href="#" class="projet-img-link" @click.prevent="openProject(projet)">
@@ -143,76 +140,55 @@
           <p class="projet-desc">{{ projet.description }}</p>
           <p><strong>Rôle:</strong> {{ projet.role }}</p>
           <p><strong>Logiciels:</strong> {{ projet.logiciels.join(", ") }}</p>
-          <p class="projet-type">
-            <strong>Type de projet:</strong> {{ projet.typeProjet }}
-          </p>
-
+          <p><strong>Type de projet:</strong> {{ projet.typeProjet }}</p>
           <div class="projet-coequipiers" v-if="projet.coequipiers && projet.coequipiers.length">
-            <strong style="color: white;">Coéquipiers :</strong>
+            <strong>Coéquipiers :</strong>
             <ul>
-              <li v-for="(membre, i) in projet.coequipiers" :key="i">
-                {{ membre }}
-              </li>
+              <li v-for="(membre, i) in projet.coequipiers" :key="i">{{ membre }}</li>
             </ul>
           </div>
-
         </article>
-
       </div>
     </section>
+
+    <!-- Modal Projet -->
     <div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-xl modal-dialog-centered">
         <div class="modal-content bg-black text-white border border-dark">
-
           <div class="modal-header border-0">
             <h5 class="modal-title">{{ selectedProject?.nom }}</h5>
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
           </div>
-
           <div class="modal-body text-center">
-
-            <!-- Gallery / Processus toggle buttons -->
             <div v-if="selectedProject?.processus?.length" class="d-flex justify-content-center gap-2 mb-3">
               <button class="btnControles" @click="modalMode = 'gallery'; modalIndex = 0">Galerie</button>
               <button class="btnControles" @click="modalMode = 'processus'; modalIndex = 0">Processus</button>
             </div>
 
-            <!-- Image -->
-            <img v-if="modalMode === 'gallery' && selectedProject?.images?.length"
-              :src="selectedProject.images[modalIndex]?.src" class="img-fluid rounded mb-3"
-              style="max-height: 60vh; object-fit: contain;" />
+            <img
+              :src="modalMode === 'gallery' ? selectedProject?.images?.[modalIndex]?.src : selectedProject?.processus?.[modalIndex]?.src"
+              class="img-fluid rounded mb-3 modal-img" />
 
-            <img v-if="modalMode === 'processus' && selectedProject?.processus?.length"
-              :src="selectedProject.processus[modalIndex]?.src" class="img-fluid rounded mb-3"
-              style="max-height: 60vh; object-fit: contain;" />
-
-            <!-- Processus title -->
             <h6 v-if="modalMode === 'processus' && selectedProject?.processus?.[modalIndex]?.title" class="text-white">
               {{ selectedProject.processus[modalIndex].title }}
             </h6>
 
-            <!-- Description -->
-            <p v-if="modalMode === 'gallery'" class="text-secondary">
-              {{ selectedProject?.images?.[modalIndex]?.desc }}
-            </p>
-            <p v-if="modalMode === 'processus'" class="text-secondary">
-              {{ selectedProject?.processus?.[modalIndex]?.desc }}
+            <p class="text-secondary">
+              {{ modalMode === 'gallery' ? selectedProject?.images?.[modalIndex]?.desc :
+              selectedProject?.processus?.[modalIndex]?.desc }}
             </p>
 
-            <!-- Prev / Next buttons -->
             <div class="d-flex justify-content-center gap-2 mt-2">
               <button class="btnControles" @click="modalPrev">◀ Précédente</button>
               <button class="btnControles" @click="modalNext">Suivante ▶</button>
             </div>
 
-            <!-- Project info -->
             <div class="mt-4 text-start">
               <p>{{ selectedProject?.description }}</p>
               <p><strong>Rôle:</strong> {{ selectedProject?.role }}</p>
               <p><strong>Logiciels:</strong> {{ selectedProject?.logiciels?.join(', ') }}</p>
               <p><strong>Type:</strong> {{ selectedProject?.typeProjet }}</p>
             </div>
-
           </div>
         </div>
       </div>
@@ -234,7 +210,6 @@
     <p class="texte-footer">Radhouane Kordan - 2025</p>
   </footer>
 
-  <!-- scripts -->
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
