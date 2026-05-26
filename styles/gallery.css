@@ -1,3 +1,7 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
 body {
   margin: 0;
   background: #000;
@@ -24,7 +28,6 @@ body {
   border: 2px solid rgb(154, 205, 50);
   border-radius: 999px;
   padding: 0.4rem 0.9rem;
-  font-weight: 600;
   transition: all 0.25s ease;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
@@ -93,7 +96,6 @@ main {
   color: rgb(154, 205, 50);
   border-radius: 14px;
   padding: 0.5rem 1rem;
-  font-weight: 600;
   cursor: pointer;
   transition: all 0.25s ease;
 }
