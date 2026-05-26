@@ -1,29 +1,38 @@
-gsap.registerPlugin(ScrollTrigger);
+window.addEventListener("load", () => {
+  gsap.registerPlugin(ScrollTrigger);
 
-gsap.from(".ufo", {
-  scrollTrigger: {
-    trigger: ".ufo",
-    start: "top 80%",
-    toggleActions: "play none none reverse",
-  },
-  y: 100,
-  opacity: 0,
-  duration: 1.5,
-  ease: "power2.out",
-  onComplete: () => {
-    gsap.to(".ufo", {
-      y: "-=15",
-      duration: 2,
-      repeat: -1,
-      yoyo: true,
-      ease: "sine.inOut",
-    });
-  },
+  gsap.from(".ufo", {
+    scrollTrigger: {
+      trigger: ".ufo",
+      start: "top 80%",
+      toggleActions: "play none none reverse",
+    },
+    y: 100,
+    opacity: 0,
+    duration: 1.5,
+    ease: "power2.out",
+    onComplete: () => {
+      gsap.to(".ufo", {
+        y: "-=15",
+        duration: 2,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut",
+      });
+    },
+  });
 });
 
-const appCartes = Vue.createApp({
+Vue.createApp({
   data() {
-    return { projetsArr: [] };
+    return {
+      projetsArr: [],
+      selectedProject: null,
+      modalInstance: null,
+      isAvailable: true,
+      modalIndex: 0,
+      modalMode: "gallery",
+    };
   },
 
   methods: {
@@ -32,90 +41,46 @@ const appCartes = Vue.createApp({
         .then((r) => r.json())
         .then((data) => (this.projetsArr = data));
     },
+
+    openProject(projet) {
+      this.selectedProject = projet;
+      this.modalIndex = 0;
+      this.modalMode = "gallery";
+      this.$nextTick(() => {
+        if (!this.modalInstance) {
+          this.modalInstance = new bootstrap.Modal(
+            document.getElementById("projectModal"),
+          );
+        }
+        this.modalInstance.show();
+      });
+    },
+
+    modalNext() {
+      const arr =
+        this.modalMode === "gallery"
+          ? this.selectedProject?.images
+          : this.selectedProject?.processus;
+      if (arr?.length) this.modalIndex = (this.modalIndex + 1) % arr.length;
+    },
+
+    modalPrev() {
+      const arr =
+        this.modalMode === "gallery"
+          ? this.selectedProject?.images
+          : this.selectedProject?.processus;
+      if (arr?.length)
+        this.modalIndex = (this.modalIndex - 1 + arr.length) % arr.length;
+    },
+
+    textDispo() {
+      return this.isAvailable
+        ? "✅ À la recherche d'un emploi"
+        : "⛔ Déjà engagé / non disponible";
+    },
   },
 
   mounted() {
     this.getProjets();
   },
-}).mount("#cartes");
-
-// widget dispo
-const dispoApp = Vue.createApp({
-  data() {
-    return {
-      isAvailable: true,
-    };
-  },
-
-  methods: {
-    textDispo() {
-      if (this.isAvailable) {
-        return `✅ À la recherche d'un emploi`;
-      } else {
-        return "⛔ Déjà engagé / non disponible";
-      }
-    },
-  },
-}).mount("#dispo-app");
-
-const galerieApp = Vue.createApp({
-  data() {
-    return {
-      imagesArr: [],
-      processusArr: [],
-      index: 0,
-      mode: "gallery",
-    };
-  },
-
-  methods: {
-    getData() {
-      const qs = new URLSearchParams(window.location.search);
-      const p = qs.get("p");
-      const mode = qs.get("mode");
-
-      fetch("./data/projets.json")
-        .then((r) => r.json())
-        .then((data) => {
-          const project = data.find((item) => item.param === `?p=${p}`);
-
-          if (!project) {
-            console.error("Projet introuvable pour:", p);
-            return;
-          }
-
-          this.imagesArr = project.images || [];
-          this.processusArr = project.processus || [];
-
-          if (mode === "processus" && this.processusArr.length) {
-            this.mode = "processus";
-          } else {
-            this.mode = "gallery";
-          }
-        });
-    },
-
-    nextImg() {
-      const currentArr =
-        this.mode === "gallery" ? this.imagesArr : this.processusArr;
-
-      this.index = (this.index + 1) % currentArr.length;
-    },
-
-    prevImg() {
-      const currentArr =
-        this.mode === "gallery" ? this.imagesArr : this.processusArr;
-
-      this.index = (this.index - 1 + currentArr.length) % currentArr.length;
-    },
-
-    setMode(newMode) {
-      this.mode = newMode;
-      this.index = 0;
-    },
-  },
-
-  mounted() {
-    this.getData();
-  },
-}).mount("#gallery-app");
+}).mount("#app");

@@ -392,6 +392,24 @@ h3 {
   opacity: 0.8;
 }
 
+.btnControles {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgb(154, 205, 50);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: rgb(154, 205, 50);
+  border-radius: 14px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.btnControles:hover {
+  color: #000;
+  background: rgb(154, 205, 50);
+  border-color: rgb(154, 205, 50);
+  box-shadow: 0 0 12px rgba(154, 205, 50, 0.5);
+}
 /* Media queries */
 /* Mobile */
 @media (max-width: 600px) {

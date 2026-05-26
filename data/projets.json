@@ -73,12 +73,6 @@
     "description": "Création d’un personnage extraterrestre en 3D basé sur un univers choisi, modélisé et riggé dans Maya. Le projet inclut l’ajout d’un squelette et de contrôleurs pour rendre le personnage entièrement animable.",
     "logiciels": ["Maya"],
     "image": "./medias/images/projets/pr_model_rendu_pose_salut.jpg",
-
-    "lien": {
-      "label": "Voir le processus de création",
-      "url": "galerie-projet.html?p=chat-alien"
-    },
-
     "typeProjet": "individuel",
     "role": "Modélisateur 3D et rigger",
     "param": "?p=chat-alien",
