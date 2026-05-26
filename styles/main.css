@@ -383,68 +383,115 @@ h3 {
 /* Mobile */
 @media (max-width: 600px) {
   body {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
+
+  section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  #accueil {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    min-height: 70vh;
+  }
+
+  .titres {
+    padding: 1rem 1.5rem;
+  }
+
   .titrePage {
-    font-size: 3.2rem;
-    margin-bottom: 1.2rem;
+    font-size: 2.8rem;
+    margin-bottom: 0.75rem;
   }
+
   .nomTitre {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
+
+  .titrePage,
+  .projets-titre,
+  .titreComp {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
   .hey {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: start;
-    margin-left: 8%;
+    margin-left: 0;
   }
+
   .profile {
-    width: 45%;
+    width: 50%;
+    margin-top: 1.5rem;
   }
+
   .apropos {
-    font-size: 1.3rem;
+    font-size: 1rem;
     line-height: 1.6;
-    max-width: 34ch;
+    max-width: 100%;
     margin-inline: auto;
     text-align: start;
   }
+
+  .texte-apropos {
+    margin-top: 1rem;
+  }
+
   .status-pill {
     max-width: fit-content;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     padding: 0.35rem 0.8rem;
     display: block;
     margin: 0.5rem auto 0;
   }
+
   .info {
     text-align: center;
   }
+
   .projets-titre {
-    font-size: 2.2rem;
-    margin-bottom: 2rem;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
   }
+
   .titreComp {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
+
   .projets-grid {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
     width: 92%;
     margin-inline: auto;
   }
+
   .projet-card {
-    max-width: 350px;
+    max-width: 100%;
     margin-inline: auto;
+    padding: 1.25rem;
   }
+
   .projet-titre {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
   }
+
   .projet-img {
-    height: 185px;
+    height: 160px;
   }
+
   .competences {
     grid-template-columns: repeat(2, 1fr);
     width: 90%;
-    padding: 28px 14px;
+    padding: 20px 12px;
     margin-inline: auto;
+    gap: 16px;
+  }
+
+  .icon {
+    height: 48px;
   }
 }
 
