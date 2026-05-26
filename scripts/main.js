@@ -1,6 +1,18 @@
 window.addEventListener("load", () => {
   gsap.registerPlugin(ScrollTrigger);
 
+  // --- Hero ---
+  gsap.to(".titres", {
+    scrollTrigger: {
+      trigger: ".titres",
+      start: "top top",
+      end: "bottom top",
+      scrub: true,
+    },
+    opacity: 0,
+  });
+
+  // --- UFO ---
   gsap.from(".ufo", {
     scrollTrigger: {
       trigger: ".ufo",
@@ -20,6 +32,30 @@ window.addEventListener("load", () => {
         ease: "sine.inOut",
       });
     },
+  });
+
+  // --- À propos text ---
+  gsap.to(".texte-apropos", {
+    scrollTrigger: {
+      trigger: ".texte-apropos",
+      start: "top top",
+      end: "bottom top",
+      scrub: true,
+    },
+    opacity: 0,
+  });
+
+  // --- Content blocks (info + compétences) ---
+  document.querySelectorAll(".content-block").forEach((block) => {
+    gsap.to(block, {
+      scrollTrigger: {
+        trigger: block,
+        start: "top top",
+        end: "bottom top",
+        scrub: true,
+      },
+      opacity: 0,
+    });
   });
 });
 
