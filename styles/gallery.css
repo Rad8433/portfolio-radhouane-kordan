@@ -17,7 +17,6 @@ body {
   align-items: center;
   background: #000;
   padding: 0.75rem 1rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
   margin-bottom: 1rem;
 }
 
@@ -38,6 +37,7 @@ body {
   color: #000;
   background: rgb(154, 205, 50);
   border-color: rgb(154, 205, 50);
+  box-shadow: 0 0 12px rgba(154, 205, 50, 0.5);
 }
 
 main {

@@ -90,7 +90,6 @@ h3 {
   padding-right: 1rem;
 }
 
-
 #mobileNav {
   padding-top: 0.4rem;
   background: #000;
@@ -130,6 +129,7 @@ h3 {
   color: #000;
   background: rgb(154, 205, 50);
   border-color: rgb(154, 205, 50);
+  box-shadow: 0 0 12px rgba(154, 205, 50, 0.5);
 }
 
 /* accueil */
@@ -255,7 +255,9 @@ h3 {
   height: 60px;
   width: auto;
   margin: 0 auto 8px;
-  transition: transform 0.25s ease, filter 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    filter 0.25s ease;
 }
 .comp-ico:hover .icon {
   transform: translateY(-6px);
@@ -267,7 +269,9 @@ h3 {
   margin: 0;
   opacity: 0;
   transform: translateY(6px);
-  transition: opacity 0.25s ease, transform 0.25s ease;
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
 }
 .comp-ico:hover .nom-icon {
   opacity: 1;
@@ -373,7 +377,9 @@ h3 {
 .ico-sociale {
   aspect-ratio: 3/2.5;
   height: 2.5em;
-  transition: transform 0.25s ease, filter 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    filter 0.25s ease;
   cursor: pointer;
 }
 
@@ -590,10 +596,14 @@ h3 {
 @keyframes titres {
   0%,
   100% {
-    text-shadow: 0 0 5px rgb(154, 205, 50), 0 0 10px rgb(154, 205, 50);
+    text-shadow:
+      0 0 5px rgb(154, 205, 50),
+      0 0 10px rgb(154, 205, 50);
   }
   50% {
-    text-shadow: 0 0 12px rgb(154, 205, 50), 0 0 24px rgb(154, 205, 50),
+    text-shadow:
+      0 0 12px rgb(154, 205, 50),
+      0 0 24px rgb(154, 205, 50),
       0 0 36px rgb(154, 205, 50);
   }
 }
