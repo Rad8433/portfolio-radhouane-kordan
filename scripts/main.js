@@ -61,6 +61,20 @@ window.addEventListener("load", () => {
     opacity: 0,
   });
 
+  const toggle = document.getElementById("mobileToggle");
+  const menu = document.getElementById("mobileMenu");
+
+  toggle.addEventListener("click", () => {
+    const isOpen = menu.classList.toggle("open");
+    toggle.setAttribute("aria-expanded", isOpen);
+  });
+
+  menu.querySelectorAll(".mobile-link").forEach((link) => {
+    link.addEventListener("click", () => {
+      menu.classList.remove("open");
+      toggle.setAttribute("aria-expanded", false);
+    });
+  });
   // --- Content blocks ---
   document.querySelectorAll(".content-block").forEach((block) => {
     gsap.to(block, {

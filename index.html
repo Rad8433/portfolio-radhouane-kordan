@@ -21,21 +21,18 @@
     </nav>
 
     <!-- Mobile + Tablet Nav -->
-    <nav class="navbar navbar-dark bg-black d-lg-none fixed-top" aria-label="Mobile Navigation">
-      <a class="navbar-brand fw-semibold" href="#accueil">Portfolio</a>
-
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav"
-        aria-controls="mobileNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+    <nav class="mobile-nav" aria-label="Mobile Navigation">
+      <a class="mobile-brand" href="#accueil">Portfolio</a>
+      <button class="mobile-toggle" id="mobileToggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
-
-      <div class="collapse navbar-collapse mt-2" id="mobileNav">
-        <ul class="navbar-nav ms-auto text-center gap-2 w-100">
-          <li class="nav-item"><a class="nav-link pill-link" href="#accueil">Accueil</a></li>
-          <li class="nav-item"><a class="nav-link pill-link" href="#apropos">À propos</a></li>
-          <li class="nav-item"><a class="nav-link pill-link" href="#projets">Projets</a></li>
-        </ul>
-      </div>
+      <ul class="mobile-menu" id="mobileMenu">
+        <li><a href="#accueil" class="mobile-link">Accueil</a></li>
+        <li><a href="#apropos" class="mobile-link">À propos</a></li>
+        <li><a href="#projets" class="mobile-link">Projets</a></li>
+      </ul>
     </nav>
   </header>
 
