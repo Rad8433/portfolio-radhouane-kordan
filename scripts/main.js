@@ -45,7 +45,7 @@ window.addEventListener("load", () => {
     opacity: 0,
   });
 
-  // --- Content blocks (info + compétences) ---
+  // --- Content blocks ---
   document.querySelectorAll(".content-block").forEach((block) => {
     gsap.to(block, {
       scrollTrigger: {
