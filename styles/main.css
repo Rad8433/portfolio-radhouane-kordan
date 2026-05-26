@@ -12,6 +12,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   background: #000;
@@ -149,12 +150,12 @@ h3 {
   animation: titres 1.6s ease-in-out infinite;
 }
 .titrePage {
-  font-size: 8rem;
+  font-size: clamp(2.5rem, 12vw, 8rem);
   font-weight: 700;
   margin: 0;
 }
 .nomTitre {
-  font-size: 2rem;
+  font-size: clamp(1rem, 4vw, 2rem);
   font-weight: 500;
   margin: 0;
 }
