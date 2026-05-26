@@ -20,14 +20,14 @@ body {
 
 section {
   scroll-margin-top: 80px;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 #accueil {
   min-height: 88vh;
   padding-top: 8rem;
-  padding-bottom: 10rem;
+  padding-bottom: 6rem;
   background: #000;
   display: flex;
   justify-content: center;
@@ -47,6 +47,7 @@ h3 {
 .titrePage,
 .projets-titre,
 .titreComp {
+  margin-top: 5rem;
   margin-bottom: 2.5rem;
 }
 
@@ -138,7 +139,7 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4rem 6rem;
+  padding: 2rem 3rem;
 }
 .titres > * {
   color: white;
@@ -239,7 +240,7 @@ h3 {
   background-color: rgb(22, 22, 22);
   border: #1e1e1e solid 1px;
   margin: 0 auto;
-  padding: 50px 16px 18px 16px;
+  padding: 50px 16px 50px 16px;
   border-radius: 40px;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -410,6 +411,7 @@ h3 {
   border-color: rgb(154, 205, 50);
   box-shadow: 0 0 12px rgba(154, 205, 50, 0.5);
 }
+
 /* Media queries */
 /* Mobile */
 @media (max-width: 600px) {
@@ -469,12 +471,11 @@ h3 {
 
   .titreComp {
     font-size: 1.6rem;
-    margin-bottom: 1.25rem;
   }
 
   .projets-grid {
     grid-template-columns: 1fr;
-    gap: 1.3rem;
+    gap: 2rem;
     width: 92%;
     margin-inline: auto;
   }
@@ -553,7 +554,7 @@ h3 {
 
   .projets-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 3rem;
   }
   .competences {
     grid-template-columns: repeat(4, 1fr);

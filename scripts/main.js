@@ -13,26 +13,42 @@ window.addEventListener("load", () => {
   });
 
   // --- UFO ---
-  gsap.from(".ufo", {
-    scrollTrigger: {
-      trigger: ".ufo",
-      start: "top 80%",
-      toggleActions: "play none none reverse",
+  let ufoFloat = null;
+
+  const startFloat = () => {
+    ufoFloat = gsap.to(".ufo", {
+      y: "-=15",
+      duration: 2,
+      repeat: -1,
+      yoyo: true,
+      ease: "sine.inOut",
+    });
+  };
+
+  gsap.fromTo(
+    ".ufo",
+    { opacity: 0 },
+    {
+      opacity: 1,
+      duration: 1.5,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: ".ufo",
+        start: "top 60%",
+        end: "top top",
+        toggleActions: "play none none reverse",
+        onLeave: () => {
+          ufoFloat?.kill();
+          gsap.to(".ufo", { opacity: 0, duration: 0.8 });
+        },
+        onEnterBack: () => {
+          gsap.to(".ufo", { opacity: 1, duration: 0.8 });
+          startFloat();
+        },
+      },
+      onComplete: startFloat,
     },
-    y: 100,
-    opacity: 0,
-    duration: 1.5,
-    ease: "power2.out",
-    onComplete: () => {
-      gsap.to(".ufo", {
-        y: "-=15",
-        duration: 2,
-        repeat: -1,
-        yoyo: true,
-        ease: "sine.inOut",
-      });
-    },
-  });
+  );
 
   // --- À propos text ---
   gsap.to(".texte-apropos", {
@@ -75,7 +91,62 @@ Vue.createApp({
     getProjets() {
       fetch("./data/projets.json")
         .then((r) => r.json())
-        .then((data) => (this.projetsArr = data));
+        .then((data) => {
+          this.projetsArr = data;
+          this.$nextTick(() => {
+            const initCardAnimations = () => {
+              ScrollTrigger.getAll()
+                .filter((st) => st.vars?.id === "card-row")
+                .forEach((st) => st.kill());
+
+              const cards = document.querySelectorAll(".projet-card");
+              const grid = document.querySelector(".projets-grid");
+              const colCount = Math.round(
+                grid.offsetWidth / cards[0].offsetWidth,
+              );
+
+              const rows = [];
+              for (let i = 0; i < cards.length; i += colCount) {
+                rows.push(Array.from(cards).slice(i, i + colCount));
+              }
+
+              rows.slice(0, -1).forEach((row, i) => {
+                const nextRow = rows[i + 1];
+                const triggerEl = nextRow[0];
+                row.forEach((card) => {
+                  gsap.to(card, {
+                    scrollTrigger: {
+                      id: "card-row",
+                      trigger: triggerEl,
+                      start: "top 80%",
+                      end: "top 20%",
+                      scrub: true,
+                    },
+                    y: -50,
+                    opacity: 0,
+                  });
+                });
+              });
+
+              ScrollTrigger.refresh();
+            };
+
+            initCardAnimations();
+
+            let resizeTimer;
+            const resizeObserver = new ResizeObserver(() => {
+              clearTimeout(resizeTimer);
+              resizeTimer = setTimeout(() => {
+                document.querySelectorAll(".projet-card").forEach((card) => {
+                  gsap.set(card, { y: 0, opacity: 1 });
+                });
+                initCardAnimations();
+              }, 200);
+            });
+
+            resizeObserver.observe(document.querySelector(".projets-grid"));
+          });
+        });
     },
 
     openProject(projet) {
