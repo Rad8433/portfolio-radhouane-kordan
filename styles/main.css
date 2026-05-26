@@ -26,8 +26,7 @@ section {
 
 #accueil {
   min-height: 88vh;
-  padding-top: 8rem;
-  padding-bottom: 6rem;
+  padding-bottom: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,8 +45,8 @@ h3 {
 .titrePage,
 .projets-titre,
 .titreComp {
-  margin-top: 5rem;
-  margin-bottom: 2.5rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
 }
 
 /* Nav mobile */
@@ -122,7 +121,7 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem 3rem;
+  padding: 1rem;
 }
 .titres > * {
   color: white;
@@ -152,7 +151,7 @@ h3 {
   border-radius: 50%;
 }
 .texte-apropos {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .info > * {
   color: white;
@@ -383,120 +382,79 @@ h3 {
 /* Mobile */
 @media (max-width: 600px) {
   body {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
-
-  section {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-
-  #accueil {
-    padding-top: 4rem;
-    padding-bottom: 3rem;
-    min-height: 70vh;
-  }
-
-  .titres {
-    padding: 1rem 1.5rem;
-  }
-
   .titrePage {
-    font-size: 2.8rem;
-    margin-bottom: 0.75rem;
+    font-size: 3.2rem;
+    margin-bottom: 1.2rem;
   }
-
   .nomTitre {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
-
-  .titrePage,
-  .projets-titre,
-  .titreComp {
-    margin-top: 2rem;
-    margin-bottom: 1.5rem;
-  }
-
   .hey {
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: start;
-    margin-left: 0;
+    margin-left: 8%;
   }
-
   .profile {
-    width: 50%;
-    margin-top: 1.5rem;
+    width: 45%;
   }
-
   .apropos {
-    font-size: 1rem;
+    font-size: 1.3rem;
     line-height: 1.6;
-    max-width: 100%;
+    max-width: 34ch;
     margin-inline: auto;
     text-align: start;
   }
-
-  .texte-apropos {
-    margin-top: 1rem;
-  }
-
   .status-pill {
     max-width: fit-content;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     padding: 0.35rem 0.8rem;
     display: block;
     margin: 0.5rem auto 0;
   }
-
   .info {
     text-align: center;
   }
-
   .projets-titre {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
   }
-
   .titreComp {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
-
   .projets-grid {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 2rem;
     width: 92%;
     margin-inline: auto;
   }
-
   .projet-card {
-    max-width: 100%;
+    max-width: 350px;
     margin-inline: auto;
-    padding: 1.25rem;
   }
-
   .projet-titre {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
   }
-
   .projet-img {
-    height: 160px;
+    height: 185px;
   }
-
   .competences {
     grid-template-columns: repeat(2, 1fr);
     width: 90%;
-    padding: 20px 12px;
+    padding: 28px 14px;
     margin-inline: auto;
-    gap: 16px;
-  }
-
-  .icon {
-    height: 48px;
   }
 }
 
 /* Tablet */
 @media (min-width: 601px) and (max-width: 900px) {
+  .titrePage,
+  .projets-titre,
+  .titreComp {
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
   #apropos .row.align-items-center {
     flex-direction: column;
     align-items: flex-start;
@@ -548,7 +506,6 @@ h3 {
 /* Large desktop */
 @media (min-width: 1281px) {
   .projets-grid {
-    grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
     width: min(80%, 1200px);
     margin-inline: auto;
