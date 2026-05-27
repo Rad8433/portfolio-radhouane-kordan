@@ -6,7 +6,8 @@
 }
 
 * {
-  font-family: "Roboto", sans-serif;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 300;
 }
 html {
   scroll-behavior: smooth;
@@ -16,6 +17,18 @@ body {
   padding: 0;
   background: #000;
   color: #fff;
+}
+p,
+address,
+li {
+  font-weight: 300;
+}
+
+strong,
+.btn-nav,
+.btnControles,
+.status-pill {
+  font-weight: 400;
 }
 
 section {
@@ -33,13 +46,15 @@ section {
 }
 
 /* Titres */
-h1,
-h2,
-h3 {
+h1 {
   font-family: "kinetica", sans-serif;
-  font-weight: normal;
   letter-spacing: 0.5px;
   margin-bottom: 1.5rem;
+}
+
+h2,
+h3 {
+  font-weight: bold;
 }
 
 .titrePage,
